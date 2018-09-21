@@ -1,0 +1,29 @@
+::-webkit-scrollbar-thumb:hover{
+	background:#9C27B0;
+}
+.timeline > li > .timeline-content:before,
+.bg,
+.menu-btn,
+.menu-items > ul > li > a:hover > i,
+.btn-material,
+.skill > .skill-bar > .percent,
+.owl-dots > .owl-dot.active > span{
+	background:#9C27B0;
+}
+.portfolio-items > li > .inner > .overlay > a:hover,
+.contact-info > i,
+.portfolio-filters > li > a.active,
+.portfolio-filters > li > a:hover,
+.testimonial > .icon,
+.timeline > li > .timeline-content > span,
+.btn-material.btn-secondary:hover,
+.intro-text > span{
+	color:#9C27B0;
+}
+.form-control:focus,
+.timeline > li > .timeline-content,
+.timeline > li:before,
+.btn-material.btn-secondary:hover,
+.btn-material{
+	border-color:#9C27B0;
+}
