@@ -448,11 +448,12 @@ body.show-menu .menu-items > ul > li:nth-of-type(7) > a {
 .person-img {
   position: absolute;
   bottom: 0;
-  top: -55px;
+  top: 0px;
   left: 0;
   right: 0;
   text-align: center;
   z-index: 44;
+  background-color: #e0dede;
 }
 .person-img > img {
   width: auto;
