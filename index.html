@@ -40,6 +40,11 @@
     <link rel="stylesheet alternate" title="green" type="text/css" href="./css/color-green.css" disabled="">
     <link rel="stylesheet alternate" title="teal" type="text/css" href="./css/color-teal.css" disabled="">
     <link rel="stylesheet alternate" title="pink" type="text/css" href="./css/color-pink.css" disabled="">
+    <!--Firebase Set-up-->
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
+    <script src="./js/firebase.js"></script>
+
 
 
 </head>
@@ -1997,8 +2002,8 @@
                                     <div class="col-md-6">
 
                                         <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Name"
-                                                required="">
+                                            <input type="text" class="form-control" id="conatct-name-id" name="name"
+                                                placeholder="Name" required="">
                                             <div class="help-block with-errors"></div>
                                         </div>
 
@@ -2006,8 +2011,8 @@
                                     <div class="col-md-6">
 
                                         <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Email"
-                                                required="">
+                                            <input type="email" class="form-control" id="conatct-email-id" name="email"
+                                                placeholder="Email" required="">
                                             <div class="help-block with-errors"></div>
                                         </div>
 
@@ -2017,23 +2022,23 @@
 
                                 <div class="form-group">
 
-                                    <input type="text" class="form-control" name="subject" placeholder="Subject"
-                                        required="">
+                                    <input type="text" class="form-control" id="conatct-subject-id" name="subject"
+                                        placeholder="Subject" required="">
                                     <div class="help-block with-errors"></div>
 
                                 </div>
 
                                 <div class="form-group">
 
-                                    <textarea class="form-control" placeholder="Message" name="message" rows="6"
-                                        required=""></textarea>
+                                    <textarea class="form-control" placeholder="Message" id="conatct-message-id" name="message"
+                                        rows="6" required=""></textarea>
                                     <div class="help-block with-errors"></div>
 
                                 </div>
 
                                 <div class="form-group text-center">
 
-                                    <button type="submit" class="btn-material disabled" style="pointer-events: all; cursor: pointer;">
+                                    <button onclick="savedata()" class="btn-material disabled" style="pointer-events: all; cursor: pointer;">
                                         Send Message
                                     </button>
 
@@ -2069,7 +2074,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="./js/script.js"></script>
-    <!-- <script id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/bcfd2fd6a04d394d9d179ac08/3ca49d5d480a2a777c851c1bd.js");</script> -->
 
 
 
