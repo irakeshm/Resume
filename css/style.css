@@ -471,6 +471,22 @@ body.show-menu .menu-items > ul > li:nth-of-type(7) > a {
   display: table;
   overflow-y: auto;
 }
+
+.intro-text-col-1 {
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
+  display: table;
+  overflow-y: auto;
+
+  padding: 5px;
+}
+.intro-text-col-1 > .inner {
+  height: 100%;
+  width: 100%;
+  background-color: #808080;
+}
+
 .intro-text-col > .inner {
   height: 100%;
   width: 100%;
