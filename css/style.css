@@ -484,14 +484,20 @@ body.show-menu .menu-items > ul > li:nth-of-type(7) > a {
 .intro-text-col-1 > .inner {
   height: 100%;
   width: 100%;
-  background-color: #cccccc;
+  /* background-color: #dddddd; */
 }
-.intro-text-col-1 > inner > .intro-text > a {
-  line-height: 1em;
-  display: inline-block;
-  text-decoration: none;
-  padding: 120px;
-  margin: 42px;
+.intro-text-col-1 > .inner > img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.intro-text-col-1 > .inner > img:hover {
+  opacity: 1;
+}
+
+.social-btn {
+  margin-top: 15px;
 }
 
 .intro-text-col > .inner {
