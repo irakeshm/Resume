@@ -30,6 +30,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/color-cyan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet alternate" title="cyan" type="text/css" href="./css/color-cyan.css" disabled="">
     <link rel="stylesheet alternate" title="red" type="text/css" href="./css/color-red.css" disabled="">
@@ -43,7 +44,31 @@
     <!--Firebase Set-up-->
     <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
-    <script src="./js/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyB4LBqZX3PoRTejhsU97PIx206PgcFA_S0",
+            authDomain: "resume-contact-7f6f4.firebaseapp.com",
+            databaseURL: "https://resume-contact-7f6f4.firebaseio.com",
+            projectId: "resume-contact-7f6f4",
+            storageBucket: "resume-contact-7f6f4.appspot.com",
+            messagingSenderId: "772813503157"
+        };
+        firebase.initializeApp(config);
+
+        function savedata() {
+            let emailsref = firebase
+                .database()
+                .ref()
+                .child("emails");
+            const emails = {
+                emailid: document.querySelector("#conatct-email-id").value,
+                message: document.querySelector("#conatct-message-id").value,
+                name: document.querySelector("#conatct-name-id").value,
+                subject: document.querySelector("#conatct-subject-id").value
+            };
+            emailsref.push(emails);
+        }
+    </script>
 
 
 
@@ -182,7 +207,9 @@
 
                             <div class="intro-text">
 
-
+                                <a href="https://www.linkedin.com/in/irakeshm/" target="_blank" class="fa fa-linkedin"></a>
+                                <a href="https://github.com/irakeshm" target="_blank" class="fa fa-github"></a>
+                                <a href="https://twitter.com/iRakeshM" target="_blank" class="fa fa-twitter"></a>
 
                             </div>
 
@@ -223,7 +250,7 @@
                                     </a>
                                     <a href="./doc/resume.pdf" class="btn-material btn-secondary" download="Rakesh_Mishra"
                                         target="_blank">
-                                        Download Resume
+                                        Resume
                                     </a>
                                 </div>
 
