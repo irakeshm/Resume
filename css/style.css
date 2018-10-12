@@ -17,7 +17,7 @@ img {
 .homeimage{
   width: 100%;
   height: auto;
-  padding: 5px;  
+  margin-top: 50px;
 }
 ::-webkit-scrollbar-thumb {
   border: solid 3px #fff;
