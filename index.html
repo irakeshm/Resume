@@ -22,7 +22,10 @@
 			CSS Stylesheets
 		=========================================================================-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="./css/ionicons.min.css">
     <!-- <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css">
@@ -71,6 +74,16 @@
             emailsref.push(emails);
         }
     </script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127049939-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127049939-1');
+</script>
+
 </head>
 
 <body class="loaded">
@@ -174,12 +187,16 @@
 			=========================================================================-->
         <section id="home" class="section main-section active">
             <div class="row">
-                <div class="col-lg-6 col-md-5 col-xs-12 img-col-main d-none d-lg-block d-xl-block">
-                    <div class="intro-text-col-1">
-                        <div class="inner">
-                            <img class="info__headshot-img" src="./img/me.jpg">
+                <!--Add "d-none d-lg-block d-xl-block" if dont want to show this dive on other than large screen.-->
+                <div class="col-lg-6 col-md-6 col-xs-12 img-col-main" style="display: flex">
 
-                            <div class="social-btn">
+                    <!-- <div class="intro-text-col-1"> -->
+                    <!-- <div class="inner"> -->
+                    <div style="padding:5px; background: #d4dad4; flex: 1">
+                        <img class="homeimage" src="./img/programmer.png">
+                    </div>
+
+                    <!-- <div class="social-btn">
                                 <a href="https://www.linkedin.com/in/irakeshm/" target="_blank" class="fa fa-linkedin"></a>
                                 <a href="https://github.com/irakeshm" target="_blank" class="fa fa-github"></a>
                                 <a href="https://twitter.com/iRakeshM" target="_blank" class="fa fa-twitter"></a>
@@ -188,12 +205,29 @@
                                 <a href="mailto:rakeshrenukut@gmail.com" target="_blank" class="fa fa-envelope"></a>
                                 <a href="https://medium.com/@irakeshm" target="_blank" class="fa fa-medium"></a>
                                 <a href="https://in.pinterest.com/irakeshm/" target="_blank" class="fa fa-pinterest"></a>
-                            </div>
+                            </div> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                    <!-- <div class="container">
+                        <div class="row" style="margin-top:30px;"><img class="rounded-circle mx-auto d-block img-fluid"
+                                style="height:200px; width:200px; " src="./img/me.jpg"></div>
+
+                        <div class="row d-flex justify-content-center social-btn">
+
+                            <a href="https://www.linkedin.com/in/irakeshm/" target="_blank" class="fa fa-linkedin"></a>
+                            <a href="https://github.com/irakeshm" target="_blank" class="fa fa-github"></a>
+                            <a href="https://twitter.com/iRakeshM" target="_blank" class="fa fa-twitter"></a>
+                            <a href="https://plus.google.com/u/0/+RakeshMishra20" target="_blank" class="fa fa-google-plus-square"></a>
+                            <a href="https://api.whatsapp.com/send?phone=919560684663" target="_blank" class="fa fa-whatsapp"></a>
+                            <a href="mailto:rakeshrenukut@gmail.com" target="_blank" class="fa fa-envelope"></a>
+                            <a href="https://medium.com/@irakeshm" target="_blank" class="fa fa-medium"></a>
+                            <a href="https://in.pinterest.com/irakeshm/" target="_blank" class="fa fa-pinterest"></a>
+
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
-                <div class="col-lg-6 col-md-7 col-xs-12 text-col-main">
+                <div class="col-lg-6 col-md-6 col-xs-12 text-col-main">
 
                     <div class="intro-text-col">
                         <div class="inner">
@@ -2074,6 +2108,10 @@
 			JavaScript Files
 		=========================================================================-->
     <!-- <script src="./js/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
     <script src="./js/jquery.shuffle.min.js"></script>
@@ -2086,6 +2124,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
