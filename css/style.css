@@ -1,5 +1,5 @@
 * {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-family: "Forum", cursive;
 }
 p {
   line-height: 1.6em;
@@ -14,7 +14,7 @@ img {
   width: 11px;
   height: 11px;
 }
-.homeimage{
+.homeimage {
   width: 100%;
   height: auto;
   position: relative;
