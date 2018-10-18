@@ -14,7 +14,7 @@ img {
   width: 11px;
   height: 11px;
 }
-.homeimage{
+.homeimage {
   width: 100%;
   height: auto;
   position: relative;
@@ -1826,12 +1826,12 @@ textarea.form-control {
 
 /* Style all font awesome icons */
 .fa {
-  padding: 5px;
-  font-size: 10px;
-  width: 25px;
+  padding: 20px;
+  font-size: 30px;
+  width: 80px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  margin: 5px 5px;
 }
 
 /* Add a hover effect if you want */
@@ -1839,6 +1839,14 @@ textarea.form-control {
 /* Set a specific color for each brand */
 
 /* Twitter */
+.fa:hover {
+  opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
 .fa-twitter {
   background: #55acee;
   color: white;
@@ -1873,7 +1881,7 @@ textarea.form-control {
   color: white;
 }
 .fa-envelope {
-  background: #0072c6;
+  background: #dc4538;
   color: white;
 }
 
@@ -1891,4 +1899,78 @@ textarea.form-control {
 }
 .info__headshot-img:hover {
   box-shadow: 1px 1px 100px rgb(25, 25, 25);
+}
+
+.grid {
+  list-style: none;
+}
+
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  background: transparent;
+  color: #ed4e6e;
+  text-align: center;
+}
+
+/* Individual Caption Styles */
+
+/* Caption Style 3 */
+.cs-style-3 figure {
+  overflow: hidden;
+}
+
+.cs-style-3 figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.no-touch .cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+  -webkit-transform: translateY(-50px);
+  -moz-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+  -webkit-filter: blur(2px);
+  filter: grayscale(100%) blur(5px);
+}
+
+.cs-style-3 figcaption {
+  /* height: 100px; */
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+.intro-text > a {
+  color: gold;
 }
