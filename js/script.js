@@ -72,7 +72,7 @@ $(function() {
   $(document).ready(function() {
     $("#owl-demo").owlCarousel({
       items: 1,
-      autoPlay: 3000,
+      autoplay: 2000,
       stopOnHover: true,
       navigation: true,
       paginationSpeed: 1000,
@@ -203,7 +203,7 @@ $(function() {
 
   $(function() {
     $(".typed").typed({
-      strings: ["Automation Tester.", "Web Developer.", "Human :)"],
+      strings: ["Web Developer.", "Automation Tester.", "Human :)"],
       // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
       stringsElement: null,
       // typing speed
