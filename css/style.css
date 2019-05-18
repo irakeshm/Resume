@@ -25,7 +25,7 @@ img {
   background: #c0c0c0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #009688;
+  background: #adadad;
 }
 .text-light {
   color: #727272;
@@ -49,7 +49,7 @@ img {
 }
 
 .bg {
-  background: #009688;
+  background: #adadad;
   position: fixed;
   top: 0;
   left: 0;
@@ -58,20 +58,7 @@ img {
   overflow: hidden;
   z-index: -1;
 }
-.bg:before {
-  content: " ";
-  position: absolute;
-  height: 100%;
-  margin-top: -260px;
-  width: 600px;
-  background: #fff;
-  z-index: 2;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+
 .main-content {
   position: fixed;
   z-index: 55;
@@ -185,7 +172,7 @@ body.loaded #preloader {
   width: 64px;
   line-height: 64px;
   border-radius: 50%;
-  background: #009688;
+  background: #adadad;
   -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.18);
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.18);
@@ -358,7 +345,7 @@ body.show-menu .menu-items > ul > li > a {
   -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.18);
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.18);
-  background: #009688;
+  background: #adadad;
   color: #fff;
 }
 .menu-items > ul > li > a:hover > span {
@@ -529,7 +516,7 @@ body.show-menu .menu-items > ul > li:nth-of-type(7) > a {
 }
 .intro-text > span {
   font-size: 16px;
-  color: #009688;
+  color: #adadad;
   font-weight: 300;
 }
 .intro-text > p {
@@ -553,8 +540,8 @@ a.btn-material {
 .btn-material {
   position: relative;
   padding: 11px 27px;
-  border: solid 2px #009688;
-  background: #009688;
+  border: solid 2px #adadad;
+  background: #adadad;
   text-align: center;
   display: inline-block;
   *display: inline;
@@ -582,8 +569,8 @@ a.btn-material {
   border-color: transparent;
 }
 .btn-material.btn-secondary:hover {
-  border-color: #009688;
-  color: #009688;
+  border-color: #adadad;
+  color: #adadad;
 }
 
 /*=================================================================================
@@ -693,7 +680,7 @@ a.btn-material {
 .skill > .skill-bar > .percent {
   height: 100%;
   width: 10%;
-  background: #009688;
+  background: #adadad;
 }
 
 /*== Pricing Block ==*/
@@ -805,7 +792,7 @@ a.btn-material {
   position: absolute;
   height: 16px;
   width: 16px;
-  border: solid 4px #009688;
+  border: solid 4px #adadad;
   border-radius: 50%;
   left: -37px;
   background: #fff;
@@ -815,7 +802,7 @@ a.btn-material {
   padding: 20px;
   position: relative;
   background: #fff;
-  border-left: solid 3px #009688;
+  border-left: solid 3px #adadad;
   -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -825,7 +812,7 @@ a.btn-material {
   position: absolute;
   width: 37px;
   height: 2px;
-  background: #009688;
+  background: #adadad;
   left: -37px;
   top: 17px;
   z-index: -1;
@@ -837,7 +824,7 @@ a.btn-material {
   margin: 0;
 }
 .timeline > li > .timeline-content > span {
-  color: #009688;
+  color: #adadad;
 }
 .timeline > li > .timeline-content > p {
   margin: 0;
@@ -855,7 +842,7 @@ a.btn-material {
 }
 .testimonial > .icon {
   font-size: 70px;
-  color: #009688;
+  color: #adadad;
   position: absolute;
   top: 0;
   left: 0;
@@ -914,7 +901,7 @@ a.btn-material {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .owl-dots > .owl-dot.active > span {
-  background: #009688;
+  background: #adadad;
 }
 
 /*=================================================================================
@@ -949,7 +936,7 @@ a.btn-material {
 }
 .portfolio-filters > li > a.active,
 .portfolio-filters > li > a:hover {
-  color: #009688;
+  color: #adadad;
 }
 
 /*== Portfolio Items ==*/
@@ -1017,7 +1004,7 @@ a.btn-material {
   *zoom: 1;
 }
 .portfolio-items > li > .inner > .overlay > a:hover {
-  color: #009688;
+  color: #adadad;
 }
 
 /*== Project Popup ==*/
@@ -1439,7 +1426,7 @@ ul.tags {
   font-size: 48px;
   width: 60px;
   float: left;
-  color: #009688;
+  color: #adadad;
 }
 .contact-info > p {
   float: left;
@@ -1482,7 +1469,7 @@ ul.tags {
   height: auto;
 }
 .form-control:focus {
-  border-color: #009688;
+  border-color: #adadad;
 }
 textarea.form-control {
   resize: vertical;
@@ -1738,6 +1725,12 @@ textarea.form-control {
 }
 .c-teal {
   background: #009688;
+}
+.c-dark {
+  background: #494949;
+}
+.c-light {
+  background: #adadad;
 }
 
 /* just add that code to your style.css file to apply changes */
