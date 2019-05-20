@@ -584,6 +584,12 @@ a.btn-material {
   color: rgba(0, 0, 0, 0.45);
   margin-bottom: 10px;
 }
+.about-text > div {
+  margin: 0;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.45);
+  margin-bottom: 10px;
+}
 .info-list {
   margin: 0;
   padding: 0;
@@ -653,7 +659,7 @@ a.btn-material {
 
 /*== Skills Block ==*/
 .skills-block {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .skill {
   position: relative;
