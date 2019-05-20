@@ -1,110 +1,130 @@
 <!DOCTYPE html>
 <html class="js csstransforms csstransforms3d csstransitions">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <link rel="icon" href="./img/fav.png">
-    <link rel="apple-touch-icon" sizes="32x32" href="./img/fav32.png">
-    <link rel="apple-touch-icon" sizes="64x64" href="./img/fav64.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="./img/fav.png">
+    <link rel="icon" href="./img/fav.png" />
+    <link rel="apple-touch-icon" sizes="32x32" href="./img/fav32.png" />
+    <link rel="apple-touch-icon" sizes="64x64" href="./img/fav64.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="./img/fav.png" />
     <!--page-title-->
     <title>Rakesh Mishra- @irakeshm</title>
 
     <!--[if lt IE 9]>
-		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
     <!--========================================================================
 			CSS Stylesheets
 		=========================================================================-->
     <!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" type="text/css" href="./css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/ionicons.min.css" />
     <!-- <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"> -->
-    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/owl.carousel.css" />
     <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"> -->
-    <link rel="stylesheet" type="text/css" href="./css/linea.css">
+    <link rel="stylesheet" type="text/css" href="./css/linea.css" />
     <!-- <link rel="stylesheet" type="text/css" href="./css/magnific-popup.css"> -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/color-cyan.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet alternate" title="dark" type="text/css" href="./css/color-dark.css" disabled="">
-    <link rel="stylesheet alternate" title="light" type="text/css" href="./css/color-light.css">
-    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/color-cyan.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet alternate"
+      title="dark"
+      type="text/css"
+      href="./css/color-dark.css"
+      disabled=""
+    />
+    <link
+      rel="stylesheet alternate"
+      title="light"
+      type="text/css"
+      href="./css/color-light.css"
+    />
+
     <!--Firebase Set-up-->
     <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-database.js"></script>
     <script>
-        var config = {
-            apiKey: "AIzaSyB4LBqZX3PoRTejhsU97PIx206PgcFA_S0",
-            authDomain: "resume-contact-7f6f4.firebaseapp.com",
-            databaseURL: "https://resume-contact-7f6f4.firebaseio.com",
-            projectId: "resume-contact-7f6f4",
-            storageBucket: "resume-contact-7f6f4.appspot.com",
-            messagingSenderId: "772813503157"
-        };
-        firebase.initializeApp(config);
+      var config = {
+        apiKey: "AIzaSyB4LBqZX3PoRTejhsU97PIx206PgcFA_S0",
+        authDomain: "resume-contact-7f6f4.firebaseapp.com",
+        databaseURL: "https://resume-contact-7f6f4.firebaseio.com",
+        projectId: "resume-contact-7f6f4",
+        storageBucket: "resume-contact-7f6f4.appspot.com",
+        messagingSenderId: "772813503157"
+      };
+      firebase.initializeApp(config);
 
-        function savedata() {
-            let emailsref = firebase
-                .database()
-                .ref()
-                .child("emails");
-            const emails = {
-                emailid: document.querySelector("#conatct-email-id").value,
-                message: document.querySelector("#conatct-message-id").value,
-                name: document.querySelector("#conatct-name-id").value,
-                subject: document.querySelector("#conatct-subject-id").value
-            };
-            emailsref.push(emails);
-        }
+      function savedata() {
+        let emailsref = firebase
+          .database()
+          .ref()
+          .child("emails");
+        const emails = {
+          emailid: document.querySelector("#conatct-email-id").value,
+          message: document.querySelector("#conatct-message-id").value,
+          name: document.querySelector("#conatct-name-id").value,
+          subject: document.querySelector("#conatct-subject-id").value
+        };
+        emailsref.push(emails);
+      }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127049939-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-127049939-1"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-        gtag('config', 'UA-127049939-1');
+      gtag("config", "UA-127049939-1");
     </script>
+  </head>
 
-</head>
-
-<body class="loaded">
-
-
+  <body class="loaded">
     <div class="colors">
-
-        <a class="c-dark active" data-val="dark" href="#"></a>        
-        <a class="c-light" data-val="light" href="#"></a>
+      <a class="c-dark active" data-val="dark" href="#"></a>
+      <a class="c-light" data-val="light" href="#"></a>
     </div>
-
 
     <!--========================================================================
 			Preloader
 		=========================================================================-->
     <div id="preloader">
-
-        <div class="loader">
-
-            <div class="img">
-                <img src="./img/loader.svg" alt="">
-            </div>
-            <span>Loading...</span>
-
+      <div class="loader">
+        <div class="img">
+          <img src="./img/loader.svg" alt="" />
         </div>
-
+        <span>Loading...</span>
+      </div>
     </div>
 
     <!--========================================================================
@@ -115,91 +135,103 @@
 			main-content wrapper
 		=========================================================================-->
     <div class="main-content">
-        <!--menu-button-->
-        <a href="#" class="menu-btn">
-            <span class="lines">
-                <span class="l1"></span>
-                <span class="l2"></span>
-                <span class="l3"></span>
-            </span>
-        </a>
+      <!--menu-button-->
+      <a href="#" class="menu-btn">
+        <span class="lines">
+          <span class="l1"></span>
+          <span class="l2"></span>
+          <span class="l3"></span>
+        </span>
+      </a>
 
-        <!--menu-->
-        <div class="menu">
-            <!--menu items-->
-            <nav class="menu-items">
-                <ul>
-                    <li>
-                        <a href="#home" data-section="home">
-                            <i class="ion-ios-home-outline"></i>
-                            <span>Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#about" data-section="about">
-                            <i class="ion-ios-person-outline"></i>
-                            <span>About</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#resume" data-section="resume">
-                            <i class="ion-ios-book-outline"></i>
-                            <span>Resume</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#portfolio" data-section="portfolio">
-                            <i class="ion-ios-albums-outline"></i>
-                            <span>Portfolio</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#blog" data-section="blog">
-                            <i class="ion-ios-paper-outline"></i>
-                            <span>Blog</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#contact" data-section="contact">
-                            <i class="ion-ios-email-outline"></i>
-                            <span>Contact Me</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+      <!--menu-->
+      <div class="menu">
+        <!--menu items-->
+        <nav class="menu-items">
+          <ul>
+            <li>
+              <a href="#home" data-section="home">
+                <i class="ion-ios-home-outline"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" data-section="about">
+                <i class="ion-ios-person-outline"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" data-section="resume">
+                <i class="ion-ios-book-outline"></i>
+                <span>Resume</span>
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" data-section="portfolio">
+                <i class="ion-ios-albums-outline"></i>
+                <span>portfolio</span>
+              </a>
+            </li>
+            <li>
+              <a href="#blog" data-section="blog">
+                <i class="ion-ios-paper-outline"></i>
+                <span>Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" data-section="contact">
+                <i class="ion-ios-email-outline"></i>
+                <span>Contact Me</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-        </div>
-
-        <!--========================================================================
+      <!--========================================================================
 				Home Section
 			=========================================================================-->
-        <section id="home" class="section main-section active">
-            <div class="row">
-                <!--Add "d-none d-lg-block d-xl-block" if dont want to show this dive on other than large screen.-->
-                <div class="col-lg-6 col-md-6 col-xs-12 img-col-main" style="display: flex">
-
-                    <!-- <div class="intro-text-col-1"> -->
-                    <!-- <div class="inner"> -->
-                    <!-- <div style="padding:5px; background: #d4dad4; flex: 1">
+      <section id="home" class="section main-section active">
+        <div class="row">
+          <!--Add "d-none d-lg-block d-xl-block" if dont want to show this dive on other than large screen.-->
+          <div
+            class="col-lg-6 col-md-6 col-xs-12 img-col-main"
+            style="display: flex"
+          >
+            <!-- <div class="intro-text-col-1"> -->
+            <!-- <div class="inner"> -->
+            <!-- <div style="padding:5px; background: #d4dad4; flex: 1">
                         <figure class="snip0016"></figure>
                         <img class="homeimage" src="./img/p.png">
                     </div> -->
 
-                    <div class="js no-touch" style="padding:5px; background: #d4dad4; flex: 1">
-                        <div class="grid cs-style-3">
-                            <figure>
-                                <div class="content-overlay"></div>
-                                <img src="./img/p.png" alt="img03" class="homeimage">
-                                <figcaption>
-                                    <a href="https://www.linkedin.com/in/irakeshm/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-                                    <a href="https://github.com/irakeshm" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-                                    <a href="mailto:irakeshm.tech@gmail.com" target="_blank"><i class="fa fa-envelope fa-lg"></i></a>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="social-btn">
+            <div
+              class="js no-touch"
+              style="padding:5px; background: #d4dad4; flex: 1"
+            >
+              <div class="grid cs-style-3">
+                <figure>
+                  <div class="content-overlay"></div>
+                  <img src="./img/p.png" alt="img03" class="homeimage" />
+                  <figcaption>
+                    <a
+                      href="https://www.linkedin.com/in/irakeshm/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin fa-lg"></i
+                    ></a>
+                    <a href="https://github.com/irakeshm" target="_blank"
+                      ><i class="fa fa-github fa-lg"></i
+                    ></a>
+                    <a href="mailto:irakeshm.tech@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope fa-lg"></i
+                    ></a>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="social-btn">
                                 <a href="https://www.linkedin.com/in/irakeshm/" target="_blank" class="fa fa-linkedin"></a>
                                 <a href="https://github.com/irakeshm" target="_blank" class="fa fa-github"></a>
                                 <a href="https://twitter.com/iRakeshM" target="_blank" class="fa fa-twitter"></a>
@@ -209,9 +241,9 @@
                                 <a href="https://medium.com/@irakeshm" target="_blank" class="fa fa-medium"></a>
                                 <a href="https://in.pinterest.com/irakeshm/" target="_blank" class="fa fa-pinterest"></a>
                             </div> -->
-                <!-- </div> -->
-                <!-- </div> -->
-                <!-- <div class="container">
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="container">
                         <div class="row" style="margin-top:30px;"><img class="rounded-circle mx-auto d-block img-fluid"
                                 style="height:200px; width:200px; " src="./img/me.jpg"></div>
 
@@ -229,26 +261,24 @@
                         </div>
                     </div> -->
 
+          <div class="col-lg-6 col-md-6 col-xs-12 text-col-main">
+            <div class="intro-text-col">
+              <div class="inner">
+                <div class="intro-text">
+                  <!--your-name-->
+                  <h1>I’m Rakesh</h1>
 
-                <div class="col-lg-6 col-md-6 col-xs-12 text-col-main">
+                  <!--your-summarized explanation-->
+                  <!-- <span>I Automate Web, Desktop & Mobile App.</span> -->
+                  <span
+                    >I am Full stack Test Automation Engineer for Web & Mobile
+                    Apllication</span
+                  >
+                  <!-- <span>A Tester, Developer and Human from earth &#9793;</span> -->
+                  <h3>I am <span class="typed"></span></h3>
 
-                    <div class="intro-text-col">
-                        <div class="inner">
-
-                            <div class="intro-text">
-
-                                <!--your-name-->
-                                <h1>I’m Rakesh</h1>
-
-                                <!--your-summarized explanation-->
-                                <!-- <span>I Automate Web, Desktop & Mobile App.</span> -->
-                                <span>I am FrontEnd Developer for Web & Mobile Apllication</span>
-                                <!-- <span>A Tester, Developer and Human from earth &#9793;</span> -->
-                                <h3>I am <span class="typed"></span></h3>
-
-
-                                <!--your-information-->
-                                <!-- <p>
+                  <!--your-information-->
+                  <!-- <p>
                                     A <b>Full Stack Automation Test Engineer</b> based in India,
                                     Specializing in Software Test Automation of Web, Desktop & Mobile
                                     Applications, and Occasionally Designing and Developing Web & Mobile
@@ -256,97 +286,143 @@
                                     India as Sr.
                                     Software Engineer (Testing).
                                 </p> -->
-                                <p style="text-align:justify;">
-                                    A <b>FrontEnd Developer & UI/UX Designer</b> based in India,
-                                    Specializing in UI Development of Web & Mobile Applications, and Occasionally Developing Web & Mobile App
-                                    Test Automation Framework. Currently working at <a href="https://www.stryker.com/" target="_blank">Stryker</a>,
-                                    India as Sr. Software Engineer.
-                                </p>
+                  <p style="text-align:justify;">
+                    A <b>Software Engineer</b> based in India, with strong
+                    expertise in Automation Test Tools and Ddesigning and
+                    Implementing Test Automation Frameworks, and Occasionally
+                    Developing Web & Mobile Applications. Currently working at
+                    <a href="https://www.stryker.com/" target="_blank"
+                      >Stryker Corporation</a
+                    >, India as Senior Software Engineer.
+                  </p>
 
-                                <!--intro-buttons-->
-                                <div class="intro-btns">
-                                    <a href="#contact" class="btn-material section-toggle" data-section="contact">
-                                        Contact Me
-                                    </a>
-                                    <a href="./doc/Rakesh Mishra_Resume.pdf" class="btn-material btn-secondary" target="_blank">
-                                        Resume
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  <!--intro-buttons-->
+                  <div class="intro-btns">
+                    <a
+                      href="#contact"
+                      class="btn-material section-toggle"
+                      data-section="contact"
+                    >
+                      Contact Me
+                    </a>
+                    <a
+                      href="./doc/Rakesh Mishra_Resume.pdf"
+                      class="btn-material btn-secondary"
+                      target="_blank"
+                    >
+                      Resume
+                    </a>
+                  </div>
                 </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--========================================================================
+      <!--========================================================================
 				About Section
 			=========================================================================-->
-        <section id="about" class="section about-section">
-            <div class="container-fluid">
-                <div class="block about-block">
+      <section id="about" class="section about-section">
+        <div class="container-fluid">
+          <div class="block about-block">
+            <!--section-header-->
+            <div class="section-header">
+              <h2>About Me</h2>
+              <p>I'm an Allround QA Engineer.</p>
+            </div>
 
-                    <!--section-header-->
-                    <div class="section-header">
-                        <h2>About Me</h2>
-                        <p>I'm an Allround Web Developer.</p>
-                    </div>
+            <div class="row">
+              <div class="col-md-4">
+                <!--info-list-->
+                <ul class="info-list">
+                  <li>
+                    <strong>Name:</strong>
+                    <span>Rakesh Mishra</span>
+                  </li>
+                  <li>
+                    <strong>Job:</strong>
+                    <span>Test Automation Engineer</span>
+                  </li>
+                  <li>
+                    <strong>Age:</strong>
+                    <span>29 Years</span>
+                  </li>
+                  <li>
+                    <strong>Country:</strong>
+                    <span>India</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <!--about-text-->
+                <div class="about-text">
+                  <p>
+                    7+ years of professional experience in the field of Software
+                    Quality Assurance and Testing as SDET with extensive
+                    knowledge of Software Automation, Design & Implementation. A
+                    highly capable technology and testing professional who
+                    enjoys the synergies of proving concepts, team working and
+                    collaboration, as well as learning.
+                  </p>
 
-                    <div class="row">
-                        <div class="col-md-4">
+                  <p>
+                    A Quality Assurance Engineer with great attention to detail
+                    and a commitment to developing and implementing continuous
+                    improvement initiatives through the collection and analysis
+                    of data and converting it into actionable information.
+                  </p>
 
-                            <!--info-list-->
-                            <ul class="info-list">
-                                <li>
-                                    <strong>Name:</strong>
-                                    <span>Rakesh Mishra</span>
-                                </li>
-                                <li>
-                                    <strong>Job:</strong>
-                                    <span>FrontEnd Developer</span>
-                                </li>
-                                <li>
-                                    <strong>Age:</strong>
-                                    <span>29 Years</span>
-                                </li>
-                                <li>
-                                    <strong>Country:</strong>
-                                    <span>India</span>
-                                </li>
-                            </ul>
-
-                        </div>
-                        <div class="col-md-8">
-
-                            <!--about-text-->
-                            <div class="about-text">
-                                <p>
-                                    <ul>
-                                        <li>Around 7+ years of experience in designing User Interface (UI) web applications using HTML, CSS, JavaScript, JQuery, React JS, Angular JS, Node.js, AJAX, JSON, MVC.</li>
-                                    
-<li>Hands on expertise in working with the Java Script, React JS and various MVC JavaScript frameworks AngularJS and Node.js.</li>
-<li>Strong experience in using the latest approaches including MVC in the browser, event - driven applications using AJAX, JavaScript, JSON, and JSONP.</li>
-<li>Experienced in MERN stack development Mongo dB, Express, Node, and React JS.</li>
-<li>Expertise in React JS framework to develop the SPA.</li>
-<li>Experienced in working with Redux architecture using complex Object-Oriented concepts in improving the performance of the websites.</li>
-<li>Experience in using React JS components, Forms, Events, Keys, Router, plus Redux, Animations and Flux concept.</li>
-<li>Good experience on customizing CSS frameworks like Bootstrap and Foundation using CSS pre-processors LESS or SASS and Compass.</li>
-<li>Experience in Node environment using Node.js, NPM, Grunt, Gulp, Groovy Bower.</li>
-<li>Expertise in RESTful, SOAP web services to integrate between Application to Application.</li>
-<li>Proficient in using Unit.js testing framework along with Jest, Jasmine, Karma, Protractor, Mocha test runners.</li>
-<li>Experience in Version Control tools like CVS, GIT, and SVN for Source  Code version management.</li>
-<li>Developed Test Automation Framework for WebApplication and Mobile Application using Selenium & Appium.</li>
-<li>Strong knowledge on Build (Ant/Maven), Continuous Integration (Jenkins), Code Quality Analysis and Unit and Integration Testing.</li>
-
-</ul>
-                                </p>
-                                
-                            </div>
-
-                        </div>
-                    </div>
+                  <p>
+                    Solution-oriented and hands-on technical utility player,
+                    centered in software testing for Web, Mobile and Windows
+                    Application. Focused on creating collaborative efforts
+                    between Design and Verification teams to implement system or
+                    product level changes to benefit end users. Experienced in
+                    user behavior patterns and potentials areas of product
+                    misuse that lead to better testing practices and more
+                    complete coverage of edge case issues.
+                  </p>
+                  <div>
+                    Key Responsibilities:
+                    <ul>
+                      <li>
+                        Document Test Stratgy, Test Plans, Test Protocol, Test
+                        Cases, Test Scenario and Test Reports
+                      </li>
+                      <li>Perform and document risk analysis</li>
+                      <li>Record test progress and results</li>
+                      <li>Design and Implement Test Automation Framework</li>
+                      <li>
+                        Develop standards and procedures to determine product
+                        quality and release readiness
+                      </li>
+                      <li>Discover bugs within software</li>
+                      <li>
+                        Drive innovation and streamline overall testing
+                        processes
+                      </li>
+                      <li>
+                        Identify, isolate, and track bugs throughout testing
+                      </li>
+                      <li>
+                        Identify any potential problems that users might
+                        encounter
+                      </li>
+                      <li>Perform manual and automated testing</li>
+                      <li>
+                        Research and analyze product features being tested
+                      </li>
+                      <li>
+                        Research new tools, technologies, and testing processes
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <!-- <div class="block services-block">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="block services-block">
 
                     
                     <div class="section-header">
@@ -403,280 +479,383 @@
 
                 </div> -->
 
-                <div class="block skills-block">
+          <div class="block skills-block">
+            <!--section-header-->
+            <div class="section-header">
+              <h2>My Skills</h2>
+              <p>I've got really amazing skills</p>
+            </div>
 
-                    <!--section-header-->
-                    <div class="section-header">
-                        <h2>My Skills</h2>
-                        <p>I've got really amazing skills</p>
-                    </div>
-
-                    <!--skills-->
-                    <div class="row">
-
-                        <!--skills-column-1-->
-                        <div class="col-md-6">
-
-                            <div class="skill" data-percent="85">
-                                <h4>HTML/CSS</h4>
-                                <!-- <div class="skill-bar">
+            <!--skills-->
+            <div class="row">
+              <!--skills-column-1-->
+              <div class="col-md-6">
+                <div class="skill" data-percent="85">
+                  <h4>C#</h4>
+                  <!-- <div class="skill-bar">
                                     <div class="percent" style="width:85%"></div>
                                 </div> -->
-                            </div>
-
-                            <div class="skill" data-percent="95">
-                                <h4>JavaScript</h4>
-
-                            </div>
-
-                            <div class="skill" data-percent="90">
-                                <h4>React JS</h4>
-
-                            </div>
-                            <div class="skill" data-percent="70">
-                                <h4>React Native</h4>
-
-                            </div>
-                            <div class="skill" data-percent="80">
-                                <h4>Angular JS</h4>
-
-                            </div>
-                            <div class="skill" data-percent="70">
-                                    <h4>Mongo DB</h4>
-    
-                                </div>
-
-                        </div>
-
-                        <!--skills-column-2-->
-                        <div class="col-md-6">
-
-                            <div class="skill" data-percent="80">
-                                <h4>Node.js</h4>
-
-                            </div>
-
-                            <div class="skill" data-percent="85">
-                                <h4>Unit JS</h4>
-
-                            </div>
-
-                            <div class="skill" data-percent="90">
-                                <h4>Selenium</h4>
-
-                            </div>
-                            <div class="skill" data-percent="80">
-                                <h4>Appium</h4>
-
-                            </div>
-                            <div class="skill" data-percent="75">
-                                <h4>C#</h4>
-
-                            </div>
-                            <div class="skill" data-percent="70">
-                                    <h4>Python</h4>
-    
-                                </div>
-
-                        </div>
-
-                    </div>
-
                 </div>
 
+                <div class="skill" data-percent="95">
+                  <h4>Python</h4>
+                </div>
 
-                <!--pricing-block-->
-                <!-- <div class="block pricing-block">
+                <div class="skill" data-percent="90">
+                  <h4>JavaScript</h4>
+                </div>
+                <div class="skill" data-percent="70">
+                  <h4>Java</h4>
+                </div>
+                <div class="skill" data-percent="80">
+                  <h4>Groovy</h4>
+                </div>
+                <div class="skill" data-percent="90">
+                  <h4>Selenium</h4>
+                </div>
+                <div class="skill" data-percent="80">
+                  <h4>Coded-UI</h4>
+                </div>
 
-                    
-                    <div class="section-header">
-                        <h2>Pricing</h2>
-                        <p>I provide different packages for my services</p>
-                    </div>
+                <div class="skill" data-percent="85">
+                  <h4>Protractor</h4>
+                </div>
 
-                    
-                    <div class="row">
-                        <div class="col-md-4">
+                <div class="skill" data-percent="90">
+                  <h4>Appium</h4>
+                </div>
+              </div>
 
-                            <div class="p-table">
-
-                                <div class="header">
-                                    <h4>Basic</h4>
-                                    <div class="price">
-                                        <span class="currency">$</span>
-                                        <span class="amount">29</span>
-                                        <span class="period">/hr</span>
-                                    </div>
-                                </div>
-
-                                <ul class="items">
-                                    <li>
-                                        Web Designing
-                                    </li>
-                                    <li>
-                                        Web Development
-                                    </li>
-                                    <li>
-                                        App Development
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="btn-material">Sign Up</a>
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4">
-
-                            <div class="p-table">
-
-                                <div class="header">
-                                    <h4>Gold</h4>
-                                    <div class="price">
-                                        <span class="currency">$</span>
-                                        <span class="amount">39</span>
-                                        <span class="period">/hr</span>
-                                    </div>
-                                </div>
-
-                                <ul class="items">
-                                    <li>
-                                        Web Designing
-                                    </li>
-                                    <li>
-                                        Web Development
-                                    </li>
-                                    <li>
-                                        App Development
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="btn-material">Sign Up</a>
-
-                            </div>
-
-                        </div>
-
-                        <div class="col-md-4">
-
-                            <div class="p-table">
-
-                                <div class="header">
-                                    <h4>Pro</h4>
-                                    <div class="price">
-                                        <span class="currency">$</span>
-                                        <span class="amount">99</span>
-                                        <span class="period">/hr</span>
-                                    </div>
-                                </div>
-
-                                <ul class="items">
-                                    <li>
-                                        Web Designing
-                                    </li>
-                                    <li>
-                                        Web Development
-                                    </li>
-                                    <li>
-                                        App Development
-                                    </li>
-                                </ul>
-
-                                <a href="#" class="btn-material">Sign Up</a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div> -->
+              <!--skills-column-2-->
+              <div class="col-md-6">
+                <div class="skill" data-percent="60">
+                  <h4>Espresso</h4>
+                </div>
+                <div class="skill" data-percent="75">
+                  <h4>Cucumber</h4>
+                </div>
+                <div class="skill" data-percent="90">
+                  <h4>HTML/CSS</h4>
+                </div>
+                <div class="skill" data-percent="60">
+                  <h4>React JS/Native</h4>
+                </div>
+                <div class="skill" data-percent="60">
+                  <h4>Node.js</h4>
+                </div>
+                <div class="skill" data-percent="65">
+                  <h4>Django</h4>
+                </div>
+                <div class="skill" data-percent="60">
+                  <h4>Rest-Assured</h4>
+                </div>
+                <div class="skill" data-percent="80">
+                  <h4>Unit Testing</h4>
+                </div>
+                <div class="skill" data-percent="75">
+                  <h4>Git</h4>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-        <!--========================================================================
+          <!-- pricing-block-->
+          <!-- <div class="block pricing-block">
+            <div class="section-header">
+              <h2>Key Roles</h2>
+              <p>I have major 3</p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4">
+                <div class="p-table">
+                  <div class="header">
+                    <h4>Basic</h4>
+                    <div class="price">
+                      <span class="currency">$</span>
+                      <span class="amount">29</span>
+                      <span class="period">/hr</span>
+                    </div>
+                  </div>
+
+                  <ul class="items">
+                    <li>
+                      Web Designing
+                    </li>
+                    <li>
+                      Web Development
+                    </li>
+                    <li>
+                      App Development
+                    </li>
+                  </ul>
+
+                  <a href="#" class="btn-material">Sign Up</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="p-table">
+                  <div class="header">
+                    <h4>Gold</h4>
+                    <div class="price">
+                      <span class="currency">$</span>
+                      <span class="amount">39</span>
+                      <span class="period">/hr</span>
+                    </div>
+                  </div>
+
+                  <ul class="items">
+                    <li>
+                      Web Designing
+                    </li>
+                    <li>
+                      Web Development
+                    </li>
+                    <li>
+                      App Development
+                    </li>
+                  </ul>
+
+                  <a href="#" class="btn-material">Sign Up</a>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="p-table">
+                  <div class="header">
+                    <h4>Pro</h4>
+                    <div class="price">
+                      <span class="currency">$</span>
+                      <span class="amount">99</span>
+                      <span class="period">/hr</span>
+                    </div>
+                  </div>
+
+                  <ul class="items">
+                    <li>
+                      Web Designing
+                    </li>
+                    <li>
+                      Web Development
+                    </li>
+                    <li>
+                      App Development
+                    </li>
+                  </ul>
+
+                  <a href="#" class="btn-material">Sign Up</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!--========================================================================
 				Resume Section
 			=========================================================================-->
-        <section id="resume" class="section resume-section">
-            <div class="container-fluid">
+      <section id="resume" class="section resume-section">
+        <div class="container-fluid">
+          <!--education-block-->
+          <div class="block timeline-block">
+            <!--section-header-->
+            <div class="section-header">
+              <h2>My Education</h2>
+              <p>Take a look at the places where I've studied</p>
+            </div>
 
-                <!--education-block-->
-                <div class="block timeline-block">
-
-                    <!--section-header-->
-                    <div class="section-header">
-                        <h2>My Education</h2>
-                        <p>Take a look at the places where I've studied</p>
-                    </div>
-
-                    <!--education-timeline-->
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-content">
-                                <h4>UPTU, Lucknow</h4>
-                                <span>Graduation - 2007 to 2011</span>
-                                <p>
-                                    Bechalor in Technology (Information Technology)
-                                </p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h4>HIC College</h4>
-                                <span>Higher Secondary - 2006 to 2007</span>
-                                <!-- <p>
-                                    Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus
-                                    explicari sed.
-                                </p> -->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-content">
-                                <h4>HIC College</h4>
-                                <span>Senior Secondary - 2004 to 2005</span>
-                                <!-- <p>
-                                    Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus
-                                    explicari sed.
-                                </p> -->
-                            </div>
-                        </li>
-                    </ul>
-
+            <!--education-timeline-->
+            <ul class="timeline">
+              <li>
+                <div class="timeline-content">
+                  <h4>UPTU, Lucknow</h4>
+                  <span>Graduation - 2007 to 2011</span>
+                  <p>
+                    Bechalor in Technology (Information Technology)
+                  </p>
+                  <p>
+                    Cumulative Percentage of 76.2%
+                  </p>
                 </div>
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h4>HIC College</h4>
+                  <span>Higher Secondary - 2006 to 2007</span>
+                  <!-- <p>
+                                    Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus
+                                    explicari sed.
+                                </p> -->
+                </div>
+              </li>
+              <li>
+                <div class="timeline-content">
+                  <h4>HIC College</h4>
+                  <span>Senior Secondary - 2004 to 2005</span>
+                  <!-- <p>
+                                    Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus
+                                    explicari sed.
+                                </p> -->
+                </div>
+              </li>
+            </ul>
+          </div>
 
-                <!--experience-block-->
-                <div class="block timeline-block experience-block">
+          <!--experience-block-->
+          <div class="block timeline-block experience-block">
+            <!--section-header-->
+            <div class="section-header">
+              <h2>My Experience</h2>
+              <p>Take a look at the places where I've worked</p>
+            </div>
 
-                    <!--section-header-->
-                    <div class="section-header">
-                        <h2>My Experience</h2>
-                        <p>Take a look at the places where I've worked</p>
-                    </div>
+            <!--experience-timeline-->
+            <ul class="timeline">
+              <li>
+                <div class="timeline-content">
+                  <h4>Stryker Global Technology Center</h4>
+                  <span>Sr. Software Engineer - April 2017 to Present</span>
+                  <div>
+                    <br />
+                    <b>Key Roles & Responsibilities:</b>
+                    <ul>
+                      <li>
+                        Worked on building a Quality driven Test Automation
+                        Framework that helped ship products rapidly and with
+                        great confidence.
+                      </li>
+                      <li>
+                        Designed and Developed the Test Automation Framework
+                        using Coded UI Library for end to end testing of WPF
+                        Application.
+                      </li>
+                      <li>
+                        Developed Test Automation Framework using Appium for end
+                        to end Automated test execution for iOS and Android
+                        Application.
+                      </li>
+                      <li>
+                        Implemented Unit Test Framework for WPF Application and
+                        Web Application using C# and JS Library.
+                      </li>
+                      <li>
+                        Developed the Data-Model using Machine Learning Library
+                        to Analyze JIRA Defects to Visualize the Defect Density
+                        and Pattern.
+                      </li>
+                      <li>
+                        Developed Web based Dashboard for Data Visualization
+                        using Google Data Studio.
+                      </li>
+                      <li>
+                        Identified areas for improved testing efficiencies, test
+                        automation and implementation of automated test
+                        solution.
+                      </li>
+                      <li>
+                        Help expanding test coverage along with creating
+                        appropriate tools, utilities, and automation scripts
+                        that assist in functional testing and creating test data
+                        (e.g. Hardware fixture Utility etc.)
+                      </li>
+                      <li>
+                        Participating in code reviews and Static analysis to
+                        ensuring that all solutions are aligned to predefined
+                        architectural specifications.
+                      </li>
+                      <li>
+                        Demonstrated ability to work on different automation
+                        frameworks like TDD, BDD and hybrid. Good exposure in
+                        automation tools like Selenium, Appium and UFT.
+                      </li>
+                      <li>
+                        Design and implement an automated test infrastructure
+                        that will support comprehensive API Testing.
+                      </li>
+                      <li>
+                        Define Quality Metrics and implement measurements to
+                        determine test effectiveness, testing efficiency, and
+                        measure the overall quality of the Product.
+                      </li>
+                      <li>
+                        Partner with engineering and infrastructure teams to
+                        leverage automation for scalable solution to prevent
+                        regressions and ensure reliability of product.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
 
-                    <!--experience-timeline-->
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-content">
-                                <h4>Stryker Global Technology Center</h4>
-                                <span>Sr. Software Engineer - Oct 2014 to Present</span>
-                                <p>
-                                    <ul>
-                                            <li>Design, develop and test HTML5, CSS3, Bootstrap, JavaScript, jQuery and React.JS that meets accessibility and web browser standards for website.</li>
-                                            <li>Designed CSS templates for use in all pages on the website working with CSS Background, positioning, text, border, margin, padding, and table.</li>
-                                            <li>Applied optimization techniques to reduce page size and load times to enhance user experience using sprites.</li>
-                                            <li>Developed user interface by using the React JS, Redux for SPA development. </li>
-                                            <li>Used React-Router to turn application into Single Page Application.</li>
-                                            <li>Worked in using React JS components, Forms, Events, Keys, Router, Animations and Redux concept.</li>
-                                            <li>Used Web services (SOAP and RESTful) for transmission of large blocks of XML/JSON.</li>
-                                            <li>Keep abreast with the latest developments in web technologies; share knowledge with the team.</li>
-                                            <li>Ensuring excellent practices are utilized in delivering UI Management and Integration Solutions.</li>
-                                            <li>Leading, mentoring, and coaching a team of software developers.</li>
-                                            <li>Provide design support during development and execution; assist with QA to ensure designs are implemented accurately and with the highest standard.</li>
-                                            <li>Work closely with the development teams to ensure that design specifications are implemented.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </li>
-                        <!-- <li>
+              <li>
+                <div class="timeline-content">
+                  <h4>Stryker Global Technology Center</h4>
+                  <span>Software Engineer - October 2014 to March 2017</span>
+                  <div>
+                    <br />
+                    <b>Key Roles & Responsibilities:</b>
+                    <ul>
+                      <li>
+                        Designed and Implemented automated testing Framework
+                        using Selenium for Verification of Web Application.
+                      </li>
+                      <li>
+                        Extensively worked in converting System requirement and
+                        real-life use cases into Test cases and Test Scenarios.
+                      </li>
+                      <li>
+                        Designed and implemented an automated regression test
+                        infrastructure that will support comprehensive testing
+                        (establish and maintain physical and/or virtual test
+                        automation labs for effective execution).
+                      </li>
+                      <li>
+                        Developed an In-House Web App for maintaining the
+                        repository of all the Hardware/Software Resources and
+                        their assignments with in the Team.
+                      </li>
+                      <li>
+                        Designed and Implemented automated testing Framework
+                        using Coded-UI for Verification of Localization feature
+                        of WPF Application.
+                      </li>
+                      <li>
+                        Hands-on experience with test planning, test designing
+                        and execution, performance and stress testing,
+                        implementing and maintaining quality test automation of
+                        both client and server systems.
+                      </li>
+                      <li>
+                        Proficient in Requirement gathering, working with design
+                        teams to understand the requirements, preparation of
+                        Test Strategy, Test Plan, Test Protocol, Test Cases,
+                        Test Scenario and Test Reports.
+                      </li>
+                      <li>
+                        Experienced in executing test cases, ad hoc product
+                        testing, reporting bugs, test status, writing test
+                        scripts, handling test automation using diverse testing
+                        tools.
+                      </li>
+                      <li>
+                        Work closely with application developers, business teams
+                        and testing teams to define automation solutions for
+                        web, mobile and windows-based applications covering
+                        projects executed in agile.
+                      </li>
+                      <li>
+                        Constantly evaluate test automation strategy and
+                        approach to identify areas of improvement (i.e. test
+                        automation frameworks, dynamic data collection
+                        methodologies, coding standards, components and object
+                        repository methods, etc.)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- <li>
                             <div class="timeline-content">
                                 <h4>Stryker Global Technology Center</h4>
                                 <span>Software Engineer - Oct 2014 to Mar 2017</span>
@@ -686,27 +865,51 @@
                                 </p>
                             </div>
                         </li> -->
-                        <li>
-                            <div class="timeline-content">
-                                <h4>Infosys Technology Pvt. Ltd.</h4>
-                                <span>Software Engineer - Dec 2011 to Oct 2014</span>
-                                <p>
-                                    <ul>
-                                            <li>Created a custom responsive web application to replace a legacy line-of-business web application using HTML & Bootstrap.</li>
-                                            <li>Developing and designing SPA user interfaces in Bootstarp & JavaScript.</li>
-                                            <li>Designed dynamic and multi-browser compatible pages using HTML, CSS, AngularJS and JavaScript.</li>
-                                            <li>Developer responsive interface using Bootstrap and used SASS for CSS.</li>
-                                            <li>Develop, extend, and maintain our user interface (UI) component library and front-end framework.</li>
-                                            <li>Collaborates with developers to implement solutions, resolve problems and perform code reviews.</li>
-                                            <li>Works with stakeholders following the Agile Scrum software development process.</li>
-                                            <li>Work closely with other UI Developers as well as mid-tier and backend developers to deliver front end code.</li>
-                                            <li>Work with other front end developers to define best practices and processes around user interface development.</li>
-                                            <li>Determines and/or directs system design and prepares work estimates for development or changes for multiple work efforts.</li>
-                                    </ul>
-                                </p>
-                            </div>
-                        </li>
-                        <!-- <li>
+              <li>
+                <div class="timeline-content">
+                  <h4>Infosys Technology Pvt. Ltd.</h4>
+                  <span>Software Engineer - December 2011 to October 2014</span>
+                  <div>
+                    <br />
+                    <b>Key Roles & Responsibilities:</b>
+                    <ul>
+                      <li>
+                        Designed and Developed the Test Automation Framework
+                        using Coded UI Library for end to end testing of CRM Web
+                        Application.
+                      </li>
+                      <li>
+                        Involved in Requirement gathering, working with design
+                        and marketing teams to understand the requirements,
+                        preparation of Test Strategy, Test Plan, Test Protocol
+                        and Test Cases.
+                      </li>
+                      <li>
+                        Performed White box, black box testing and integration
+                        testing and Reported defects and performed code
+                        debugging, code coverage and evaluation to manage the
+                        software issue from creation to closure.
+                      </li>
+                      <li>
+                        Experienced using Waterfall, Software Development Life
+                        Cycle (SDLC), Software Testing Life Cycle (STLC)
+                        methodologies, same as Scrum methods for Agile.
+                      </li>
+                      <li>
+                        Help expanding test coverage along with creating
+                        appropriate tools, utilities, and automation scripts
+                        that assist in functional testing and creating test
+                        data.
+                      </li>
+                      <li>
+                        Lead Quality assurance efforts that aligns with product
+                        objectives and develop scalable solutions.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <!-- <li>
                             <div class="timeline-content">
                                 <h4>Infosys Technology Pvt. Ltd.</h4>
                                 <span>System Engineer - May 2012 to Oct 2012</span>
@@ -727,555 +930,594 @@
                                 </p>
                             </div>
                         </li> -->
+            </ul>
+          </div>
 
-                    </ul>
-
-                </div>
-
-                <!--testimonials-block-->
-                <div class="block testimonials-block">
-
-                    <!--section-header-->
-                    <div class="section-header">
-                        <h2>Testimonials</h2>
-                        <p>Take a look at what other people say about me</p>
-                    </div>
-
-                    <!--testimonials-slider Deleted-->
-                    <div id="owl-demo" class="owl-carousel">
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                        Rakesh is a real pleasure to work with, and has unique experience in C#, Python, JavaScript, Automation Testing, Selenium, Protractor, Appium and other Automation and Web Development Frameworks, . He is very thorough in everything he does and can be depended upon to get the job done. Rakesh leads by example and many people find his enthusiasm and dedication both inspiring and motivating. The success achieved in his job required extensive knowledge and dedication. He is an asset to any organisation.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jatin Shashoo</h4>
-                                    <span>Associate at J. P. Morgan Chase and Co.</span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                    2. Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas
-                                    tractatos. Sit eu saperet anti opam scripserit. Ei albucius conse quuntur sea,
-                                    no
-                                    nominavi fabellas phaedrum his. Ei albucius consequ untur sea, no nominavi
-                                    fabellas
-                                    phaedrum his.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jack Doe</h4>
-                                    <span>CEO at Google</span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                    3. Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas
-                                    tractatos. Sit eu saperet anti opam scripserit. Ei albucius conse quuntur sea,
-                                    no
-                                    nominavi fabellas phaedrum his. Ei albucius consequ untur sea, no nominavi
-                                    fabellas
-                                    phaedrum his.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jack Doe</h4>
-                                    <span>CEO at Google</span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                    4. Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas
-                                    tractatos. Sit eu saperet anti opam scripserit. Ei albucius conse quuntur sea,
-                                    no
-                                    nominavi fabellas phaedrum his. Ei albucius consequ untur sea, no nominavi
-                                    fabellas
-                                    phaedrum his.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jack Doe</h4>
-                                    <span>CEO at Google</span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                    5. Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas
-                                    tractatos. Sit eu saperet anti opam scripserit. Ei albucius conse quuntur sea,
-                                    no
-                                    nominavi fabellas phaedrum his. Ei albucius consequ untur sea, no nominavi
-                                    fabellas
-                                    phaedrum his.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jack Doe</h4>
-                                    <span>CEO at Google</span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                    6. Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas
-                                    tractatos. Sit eu saperet anti opam scripserit. Ei albucius conse quuntur sea,
-                                    no
-                                    nominavi fabellas phaedrum his. Ei albucius consequ untur sea, no nominavi
-                                    fabellas
-                                    phaedrum his.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jack Doe</h4>
-                                    <span>CEO at Google</span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                    7. Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas
-                                    tractatos. Sit eu saperet anti opam scripserit. Ei albucius conse quuntur sea,
-                                    no
-                                    nominavi fabellas phaedrum his. Ei albucius consequ untur sea, no nominavi
-                                    fabellas
-                                    phaedrum his.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jack Doe</h4>
-                                    <span>CEO at Google</span>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="testimonial">
-                            <div class="icon">
-                                <i class="ion-quote"></i>
-                            </div>
-
-                            <div class="content">
-
-                                <p>
-                                    8. Cu illud lorem putent vel. Eum in movet nostrum referrentur. His ne tantas
-                                    tractatos. Sit eu saperet anti opam scripserit. Ei albucius conse quuntur sea,
-                                    no
-                                    nominavi fabellas phaedrum his. Ei albucius consequ untur sea, no nominavi
-                                    fabellas
-                                    phaedrum his.
-                                </p>
-
-                                <div class="author-info">
-                                    <h4>Jack Doe</h4>
-                                    <span>CEO at Google</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
+          <!--testimonials-block-->
+          <div class="block testimonials-block">
+            <!--section-header-->
+            <div class="section-header">
+              <h2>Testimonials</h2>
+              <p>Take a look at what other people say about me</p>
             </div>
-        </section>
 
-        <!--========================================================================
+            <!--testimonials-slider Deleted-->
+            <div id="owl-demo" class="owl-carousel">
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial">
+                <div class="icon">
+                  <i class="ion-quote"></i>
+                </div>
+
+                <div class="content">
+                  <p>
+                    Rakesh is a real pleasure to work with, and has unique
+                    experience in C#, Python, JavaScript, Automation Testing,
+                    Selenium, Protractor, Appium and other Automation and Web
+                    Development Frameworks, . He is very thorough in everything
+                    he does and can be depended upon to get the job done. Rakesh
+                    leads by example and many people find his enthusiasm and
+                    dedication both inspiring and motivating. The success
+                    achieved in his job required extensive knowledge and
+                    dedication. He is an asset to any organisation.
+                  </p>
+
+                  <div class="author-info">
+                    <h4>Jatin Shashoo</h4>
+                    <span>Associate at J. P. Morgan Chase and Co.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========================================================================
 				Portfolio Section
 			=========================================================================-->
-        <section id="portfolio" class="section portfolio-section">
-            <div class="container-fluid">
-
-                <!--portfolio-block-->
-                <div class="block portfolio-block">
-
-                    <!--section-header-->
-                    <div class="section-header">
-                        <h2>Portfolio</h2>
-                        <p>See my latest projects I've been working on</p>
-                    </div>
-
-                    <!--portfolio-filters-->
-                    <!-- <ul class="portfolio-filters">
-                        <li>
-                            <a href="#" class="active" data-group="all">
-                                All
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-group="web">
-                                Web
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-group="tech">
-                                Tech
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" data-group="photography">
-                                Photography
-                            </a>
-                        </li>
-                    </ul> -->
-
-                    <!--portfolio-items-->
-                    <!-- <ul class="portfolio-items shuffle" style="position: relative; overflow: hidden; height: 72px; transition: height 250ms ease-out 0s;">
-
-                        <li data-groups="[&quot;tech&quot;]" class="shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
-
-                               
-                                <img src="./img/t_1.jpg" alt="">
-
-                               
-                                <div class="overlay">
-
-                                    
-                                    <a href="#popup-1" class="has-popup view-project">
-                                        view project
-                                    </a>
-
-                                    
-                                    <div id="popup-1" class="popup-box zoom-anim-dialog mfp-hide">
-                                        <figure>
-
-                                            
-                                            <img src="./img/t_1.jpg" alt="" style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
-                                        </figure>
-                                        <div class="content">
-
-                                            
-                                            <h4>My Project Title</h4>
-
-                                           
-                                            <p>
-                                                Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-                                                Eu
-                                                volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-                                                fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-                                                quem
-                                                quod cibo.
-                                            </p>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-
-                        <li data-groups="[&quot;photography&quot;, &quot;web&quot;]" class="shuffle-item filtered"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(312px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-
-                            <div class="inner">
-
-                                
-                                <img src="./img/t_2.jpg" alt="">
-
-                                
-                                <div class="overlay">
-
-                                    
-                                    <a href="#popup-2" class="has-popup view-project">
-                                        view project
-                                    </a>
-
-                                    
-                                    <div id="popup-2" class="popup-box zoom-anim-dialog mfp-hide">
-                                        <figure>
-
-                                            
-                                            <img src="./img/t_2.jpg" alt="" style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
-                                        </figure>
-                                        <div class="content">
-
-                                            
-                                            <h4>My Project Title</h4>
-
-                                           
-                                            <p>
-                                                Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-                                                Eu
-                                                volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-                                                fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-                                                quem
-                                                quod cibo.
-                                            </p>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li data-groups="[&quot;tech&quot;, &quot;web&quot;]" class="shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
-
-                                
-                                <img src="./img/t_3.jpg" alt="">
-
-                                
-                                <div class="overlay">
-
-                                    
-                                    <a href="#popup-3" class="has-popup view-project">
-                                        view project
-                                    </a>
-
-                                    
-                                    <div id="popup-3" class="popup-box zoom-anim-dialog mfp-hide">
-                                        <figure>
-
-                                            
-                                            <img src="./img/t_3.jpg" alt="" style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
-                                        </figure>
-                                        <div class="content">
-
-                                            
-                                            <h4>My Project Title</h4>
-
-                                           
-                                            <p>
-                                                Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-                                                Eu
-                                                volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-                                                fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-                                                quem
-                                                quod cibo.
-                                            </p>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li data-groups="[&quot;photography&quot;,&quot;tech&quot;]" class="shuffle-item filtered"
-                            style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(0px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
-
-                                
-                                <img src="./img/t_4.jpg" alt="">
-
-                                
-                                <div class="overlay">
-
-                                    
-                                    <a href="#popup-4" class="has-popup view-project">
-                                        view project
-                                    </a>
-
-                                    
-                                    <div id="popup-4" class="popup-box zoom-anim-dialog mfp-hide">
-                                        <figure>
-
-                                            
-                                            <img src="./img/t_4.jpg" alt="" style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
-                                        </figure>
-                                        <div class="content">
-
-                                            
-                                            <h4>My Project Title</h4>
-
-                                           
-                                            <p>
-                                                Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-                                                Eu
-                                                volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-                                                fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-                                                quem
-                                                quod cibo.
-                                            </p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li data-groups="[&quot;web&quot;]" class="shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(312px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
-
-                                
-                                <img src="./img/t_5.jpg" alt="">
-
-                                
-                                <div class="overlay">
-
-                                    
-                                    <a href="#popup-5" class="has-popup view-project">
-                                        view project
-                                    </a>
-
-                                    
-                                    <div id="popup-5" class="popup-box zoom-anim-dialog mfp-hide">
-                                        <figure>
-
-                                            
-                                            <img src="./img/t_5.jpg" alt="" style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
-                                        </figure>
-                                        <div class="content">
-
-                                            
-                                            <h4>My Project Title</h4>
-
-                                           
-                                            <p>
-                                                Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-                                                Eu
-                                                volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-                                                fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-                                                quem
-                                                quod cibo.
-                                            </p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                        <li data-groups="[&quot;photography&quot;]" class="shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
-
-                                
-                                <img src="./img/t_6.jpg" alt="">
-
-                                
-                                <div class="overlay">
-
-                                    
-                                    <a href="#popup-6" class="has-popup view-project">
-                                        view project
-                                    </a>
-
-                                    
-                                    <div id="popup-6" class="popup-box zoom-anim-dialog mfp-hide">
-                                        <figure>
-
-                                            
-                                            <img src="./img/t_6.jpg" alt="" style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
-                                        </figure>
-                                        <div class="content">
-
-                                            
-                                            <h4>My Project Title</h4>
-
-                                           
-                                            <p>
-                                                Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-                                                Eu
-                                                volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-                                                fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-                                                quem
-                                                quod cibo.
-                                                Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-                                                Eu
-                                                volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-                                                fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-                                                quem
-                                                quod cibo.
-                                            </p>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        </li>
-
-                    </ul> -->
-
-                </div>
-
+      <section id="portfolio" class="section portfolio-section">
+        <div class="container-fluid">
+          <!--portfolio-block-->
+          <div class="block portfolio-block">
+            <!--section-header-->
+            <div class="section-header">
+              <h2>Portfolio</h2>
+              <p>See my projects I've been working on</p>
             </div>
 
-        </section>
+            <!--portfolio-filters-->
+            <ul class="portfolio-filters">
+              <li>
+                <a href="#" class="active" data-group="all">
+                  All
+                </a>
+              </li>
+              <li>
+                <a href="#" data-group="web">
+                  Web Apps
+                </a>
+              </li>
+              <li>
+                <a href="#" data-group="mobile">
+                  Mobile Apps
+                </a>
+              </li>
+              <li>
+                <a href="#" data-group="automation">
+                  Test Automation
+                </a>
+              </li>
+            </ul>
 
-        <!--========================================================================
+            <!--portfolio-items-->
+            <ul
+              class="portfolio-items shuffle"
+              style="position: relative; overflow: hidden; height: 72px; transition: height 250ms ease-out 0s;"
+            >
+              <li
+                data-groups='["web"]'
+                class="shuffle-item filtered"
+                style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+              >
+                <div class="inner">
+                  <img src="./img/resume_git.jpg" alt="" />
+
+                  <div class="overlay">
+                    <a href="#popup-1" class="has-popup view-project">
+                      View project
+                    </a>
+
+                    <div
+                      id="popup-1"
+                      class="popup-box zoom-anim-dialog mfp-hide"
+                    >
+                      <figure>
+                        <img
+                          src="./img/resume_git.JPG"
+                          alt=""
+                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                        />
+                      </figure>
+                      <div class="content">
+                        <h4>Perosnal Portfolio Website</h4>
+
+                        <p>
+                          Developed with HTML, CSS and JavaScript, This is a
+                          Personal Website to showcase my Skills and Projects, I
+                          am working on. It is hosted on Git-pages, You can
+                          access the Website
+                          <a href="https://irakeshm.tech/" target="_blank"
+                            >here</a
+                          >. Source Code on
+                          <a
+                            href="https://github.com/irakeshm/Resume"
+                            target="_blank"
+                            >GitHub</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                data-groups='["mobile"]'
+                class="shuffle-item filtered"
+                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(312px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+              >
+                <div class="inner">
+                  <img src="./img/tea_Recat.jpg" alt="" />
+
+                  <div class="overlay">
+                    <a href="#popup-2" class="has-popup view-project">
+                      view project
+                    </a>
+
+                    <div
+                      id="popup-2"
+                      class="popup-box zoom-anim-dialog mfp-hide"
+                    >
+                      <figure>
+                        <img
+                          src="./img/tea_Recat.jpg"
+                          alt=""
+                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                        />
+                      </figure>
+                      <div class="content">
+                        <h4>Know Your Tea</h4>
+
+                        <p>
+                          Developed in React Native, Know You Tea is an App to
+                          know more about Teas. Its Has Information about more
+                          than 150+ Tea. Divided in 7 categories of Tea Types.
+                          You can easily Search for Any Tea by Name or their
+                          Types. Very Tea information has some fun fact also.
+                          Checkout the Code on<a
+                            href="https://github.com/irakeshm/KnowYourTea-React-Native-App"
+                            target="_blank"
+                          >
+                            GitHub</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                data-groups='["mobile"]'
+                class="shuffle-item filtered"
+                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+              >
+                <div class="inner">
+                  <img src="./img/dine_React.jpg" alt="" />
+
+                  <div class="overlay">
+                    <a href="#popup-3" class="has-popup view-project">
+                      view project
+                    </a>
+
+                    <div
+                      id="popup-3"
+                      class="popup-box zoom-anim-dialog mfp-hide"
+                    >
+                      <figure>
+                        <img
+                          src="./img/dine_React.jpg"
+                          alt=""
+                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                        />
+                      </figure>
+                      <div class="content">
+                        <h4>Easy Dine App</h4>
+
+                        <p>
+                          Developed in React Native and Backend with Firebase,
+                          Easy Dine App Let User to go and scan a QR Code to
+                          place food order in restaurants. Checkout the Code
+                          on<a
+                            href="https://github.com/irakeshm/EasyDineApp-React-Native-App"
+                            target="_blank"
+                          >
+                            GitHub</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                data-groups='["web"]'
+                class="shuffle-item filtered"
+                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(0px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+              >
+                <div class="inner">
+                  <img src="./img/todo_reactjs.JPG" alt="" />
+
+                  <div class="overlay">
+                    <a href="#popup-4" class="has-popup view-project">
+                      view project
+                    </a>
+
+                    <div
+                      id="popup-4"
+                      class="popup-box zoom-anim-dialog mfp-hide"
+                    >
+                      <figure>
+                        <img
+                          src="./img/todo_reactjs.JPG"
+                          alt=""
+                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                        />
+                      </figure>
+                      <div class="content">
+                        <h4>To Do App</h4>
+
+                        <p>
+                          This is a sample react todo app, This will allow you
+                          to create your Todo Task List and Delete once its
+                          completed. Check the demo hosted
+                          <a
+                            href="https://irakeshm.github.io/ToDo-React-JS-App/"
+                            target="_blank"
+                            >here.</a
+                          >
+                          Checkout the Code on<a
+                            href="https://github.com/irakeshm/ToDo-React-JS-App"
+                            target="_blank"
+                          >
+                            GitHub</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                data-groups='["mobile"]'
+                class="shuffle-item filtered"
+                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(312px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+              >
+                <div class="inner">
+                  <img src="./img/Weather.jpg" alt="" />
+
+                  <div class="overlay">
+                    <a href="#popup-5" class="has-popup view-project">
+                      view project
+                    </a>
+
+                    <div
+                      id="popup-5"
+                      class="popup-box zoom-anim-dialog mfp-hide"
+                    >
+                      <figure>
+                        <img
+                          src="./img/Weather.jpg"
+                          alt=""
+                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                        />
+                      </figure>
+                      <div class="content">
+                        <h4>Awesome Weather App</h4>
+
+                        <p>
+                          A cool Awesome Weather App, developed in React Native
+                          with Expo. It works for both Android & iOS. This App
+                          will Tell you the Weather of your current location
+                          with some cool & Awesome quotes. You can see the demo
+                          screen
+                          <a
+                            href="https://github.com/irakeshm/Awesome-Weather-App/blob/master/demo.gif"
+                            >here</a
+                          >Checkout the Code on<a
+                            href="https://github.com/irakeshm/Awesome-Weather-App"
+                            target="_blank"
+                          >
+                            GitHub</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li
+                data-groups='["automation"]'
+                class="shuffle-item filtered"
+                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+              >
+                <div class="inner">
+                  <img src="./img/intelligent.jpg" alt="" />
+
+                  <div class="overlay">
+                    <a href="#popup-6" class="has-popup view-project">
+                      view project
+                    </a>
+
+                    <div
+                      id="popup-6"
+                      class="popup-box zoom-anim-dialog mfp-hide"
+                    >
+                      <figure>
+                        <img
+                          src="./img/intelligent.jpg"
+                          alt=""
+                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                        />
+                      </figure>
+                      <div class="content">
+                        <h4>Intelligent Test Automation Framework</h4>
+
+                        <p>
+                          Intelligent Test Automation – led by Artificial
+                          Intelligence and Machine Learning, is the evolutionary
+                          approach that optimize your quality lifecycle.
+                          Checkout the Code on<a
+                            href="https://github.com/irakeshm/Intelligent-Test-Automation-Framewok"
+                            target="_blank"
+                          >
+                            GitHub</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                data-groups='["automation"]'
+                class="shuffle-item filtered"
+                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+              >
+                <div class="inner">
+                  <img src="./img/Selenium.jpg" alt="" />
+
+                  <div class="overlay">
+                    <a href="#popup-7" class="has-popup view-project">
+                      view project
+                    </a>
+
+                    <div
+                      id="popup-7"
+                      class="popup-box zoom-anim-dialog mfp-hide"
+                    >
+                      <figure>
+                        <img
+                          src="./img/Selenium.jpg"
+                          alt=""
+                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                        />
+                      </figure>
+                      <div class="content">
+                        <h4>Selenium Hybrid Framework with Python</h4>
+
+                        <p>
+                          This is web automation framework, implemented using
+                          Python & Webdriver. Checkout the Code on<a
+                            href="https://github.com/irakeshm/Selenium-Python-Test-Automation-Framework"
+                            target="_blank"
+                          >
+                            GitHub</a
+                          >.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!--========================================================================
 				Blog Section
 			=========================================================================-->
-        <section id="blog" class="section blog-section">
-            <div class="container-fluid">
+      <section id="blog" class="section blog-section">
+        <div class="container-fluid">
+          <div class="block blog-block">
+            <div class="section-header">
+              <h2>My Blog</h2>
+              <p>Take a look at my most recent posts</p>
+            </div>
 
-                <div class="block blog-block">
-
-                    <div class="section-header">
-                        <h2>My Blog</h2>
-                        <p>Take a look at my most recent posts</p>
-                    </div>
-
-
-
-                    <!-- <div class="posts-grid shuffle" style="position: relative; overflow: hidden; height: 703px; transition: height 250ms ease-out 0s;">
+            <!-- <div class="posts-grid shuffle" style="position: relative; overflow: hidden; height: 703px; transition: height 250ms ease-out 0s;">
 
 
                         <div class="blog-post shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
@@ -1968,211 +2210,242 @@
 
                     </div> -->
 
-
-                    <div class="posts-more text-center">
-
-                        <a href="#" class="btn-material btn-secondary">
-                            View More Posts
-                        </a>
-
-                    </div>
-
-                </div>
-
+            <div class="posts-more text-center">
+              <a href="#" class="btn-material btn-secondary">
+                View More Posts
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-
-        <!--========================================================================
+      <!--========================================================================
 				Contact Section
 			=========================================================================-->
-        <section id="contact" class="section contact-section">
-
-            <div class="container-fluid">
-
-                <div class="block contact-block">
-
-                    <!--section-header-->
-                    <div class="section-header">
-                        <h2>Contact Me</h2>
-                        <p>You can message me to discuss on any opportunity or just to say hi</p>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-4 col-md-push-8">
-                            <div class="contact-info-icons">
-
-                                <!--contact-info-->
-                                <div class="contact-info">
-                                    <i class="ion-ios-location-outline"></i>
-                                    <p>
-                                        A-55, 2nd Floor<br>
-                                        SouthCity-2, Sector-49<br>
-                                        Gurgaon, HR-122001
-                                    </p>
-                                </div>
-
-                                <!--contact-info-->
-                                <div class="contact-info">
-                                    <i class="ion-ios-telephone-outline"></i>
-                                    <p style="margin-top:15px">
-                                        <a href="#" onclick="return false;">(+91) 956-0684-663</a>
-                                    </p>
-                                </div>
-
-                                <!--Email-info-->
-                                <div class="contact-info">
-                                    <i class="ion-ios-email-outline"></i>
-                                    <p>
-                                        <a href="mailto:irakeshm.tech@gmail.com" target="_blank">irakeshm.tech@gmail.com</a>
-                                        <br>
-                                        <a href="mailto:rakeshrenukut@gmail.com" target="_blank">rakeshrenukut@gmail.com</a>
-
-                                    </p>
-                                </div>
-                                <!--whatsapp-info-->
-                                <div class="contact-info">
-                                    <i class="ion-social-whatsapp-outline"></i>
-                                    <p style="margin-top:20px"><a href="https://api.whatsapp.com/send?phone=919560684663"
-                                            target="_blank">Ping Me!</a>
-
-                                    </p>
-                                </div>
-                                <!--Linkedin-info-->
-                                <div class="contact-info">
-                                    <i class="ion-social-linkedin-outline"></i>
-                                    <p style="margin-top:20px"><a href="https://www.linkedin.com/in/irakeshm/" target="_blank">Rakesh
-                                            Mishra</a>
-
-                                    </p>
-                                </div>
-
-                                <!--Github-info-->
-                                <div class="contact-info">
-                                    <i class="ion-social-github-outline"></i>
-                                    <p style="margin-top:20px"><a href="https://github.com/irakeshm" target="_blank">@irakeshm</a>
-
-                                    </p>
-                                </div>
-                                <!--twitter-info-->
-                                <div class="contact-info">
-                                    <i class="ion-social-twitter-outline"></i>
-                                    <p style="margin-top:20px"><a href="https://twitter.com/iRakeshM" target="_blank">@iRakeshM</a>
-
-                                    </p>
-                                </div>
-                                <!--Google-info-->
-                                <div class="contact-info">
-                                    <i class="ion-social-googleplus-outline"></i>
-                                    <p style="margin-top:20px"><a href="https://plus.google.com/u/0/+RakeshMishra20"
-                                            target="_blank">Rakesh
-                                            Mishra</a>
-
-                                    </p>
-                                </div>
-
-                                <!--Skype-info-->
-                                <div class="contact-info">
-                                    <i class="ion-social-skype-outline"></i>
-                                    <p style="margin-top:20px"><a href="skype:hello.irakeshm?add" target="_blank">hello.irakeshm</a>
-
-                                    </p>
-                                </div>
-
-                                <!--pintrest-info-->
-                                <div class="contact-info">
-                                    <i class="ion-social-pinterest-outline"></i>
-                                    <p style="margin-top:20px"><a href="https://in.pinterest.com/irakeshm/" target="_blank">@irakeshm</a>
-
-                                    </p>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="col-md-8 col-md-pull-4">
-
-                            <!--contact-form-->
-                            <form class="contact-form" id="contact-form" method="post" data-toggle="validator"
-                                novalidate="true">
-
-                                <!--contact-form-result-->
-                                <div id="contact-form-result"></div>
-
-                                <div class="row">
-
-                                    <div class="col-md-6">
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="conatct-name-id" name="name"
-                                                placeholder="Name" required="">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-6">
-
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="conatct-email-id" name="email"
-                                                placeholder="Email" required="">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div class="form-group">
-
-                                    <input type="text" class="form-control" id="conatct-subject-id" name="subject"
-                                        placeholder="Subject" required="">
-                                    <div class="help-block with-errors"></div>
-
-                                </div>
-
-                                <div class="form-group">
-
-                                    <textarea class="form-control" placeholder="Message" id="conatct-message-id" name="message"
-                                        rows="6" required=""></textarea>
-                                    <div class="help-block with-errors"></div>
-
-                                </div>
-
-                                <div class="form-group text-center">
-
-                                    <button onclick="savedata()" class="btn-material disabled" style="pointer-events: all; cursor: pointer;">
-                                        Send Message
-                                    </button>
-
-                                </div>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+      <section id="contact" class="section contact-section">
+        <div class="container-fluid">
+          <div class="block contact-block">
+            <!--section-header-->
+            <div class="section-header">
+              <h2>Contact Me</h2>
+              <p>
+                You can message me to discuss on any opportunity or just to say
+                hi
+              </p>
             </div>
 
-        </section>
+            <div class="row">
+              <div class="col-md-4 col-md-push-8">
+                <div class="contact-info-icons">
+                  <!--contact-info-->
+                  <div class="contact-info">
+                    <i class="ion-ios-location-outline"></i>
+                    <p>
+                      A-55, 2nd Floor<br />
+                      SouthCity-2, Sector-49<br />
+                      Gurgaon, HR-122001
+                    </p>
+                  </div>
 
+                  <!--contact-info-->
+                  <div class="contact-info">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <p style="margin-top:15px">
+                      <a href="#" onclick="return false;">(+91) 956-0684-663</a>
+                    </p>
+                  </div>
+
+                  <!--Email-info-->
+                  <div class="contact-info">
+                    <i class="ion-ios-email-outline"></i>
+                    <p>
+                      <a href="mailto:irakeshm.tech@gmail.com" target="_blank"
+                        >irakeshm.tech@gmail.com</a
+                      >
+                      <br />
+                      <a href="mailto:rakeshrenukut@gmail.com" target="_blank"
+                        >rakeshrenukut@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                  <!--whatsapp-info-->
+                  <div class="contact-info">
+                    <i class="ion-social-whatsapp-outline"></i>
+                    <p style="margin-top:20px">
+                      <a
+                        href="https://api.whatsapp.com/send?phone=919560684663"
+                        target="_blank"
+                        >Ping Me!</a
+                      >
+                    </p>
+                  </div>
+                  <!--Linkedin-info-->
+                  <div class="contact-info">
+                    <i class="ion-social-linkedin-outline"></i>
+                    <p style="margin-top:20px">
+                      <a
+                        href="https://www.linkedin.com/in/irakeshm/"
+                        target="_blank"
+                        >Rakesh Mishra</a
+                      >
+                    </p>
+                  </div>
+
+                  <!--Github-info-->
+                  <div class="contact-info">
+                    <i class="ion-social-github-outline"></i>
+                    <p style="margin-top:20px">
+                      <a href="https://github.com/irakeshm" target="_blank"
+                        >@irakeshm</a
+                      >
+                    </p>
+                  </div>
+                  <!--twitter-info-->
+                  <div class="contact-info">
+                    <i class="ion-social-twitter-outline"></i>
+                    <p style="margin-top:20px">
+                      <a href="https://twitter.com/iRakeshM" target="_blank"
+                        >@iRakeshM</a
+                      >
+                    </p>
+                  </div>
+                  <!--Google-info-->
+                  <div class="contact-info">
+                    <i class="ion-social-googleplus-outline"></i>
+                    <p style="margin-top:20px">
+                      <a
+                        href="https://plus.google.com/u/0/+RakeshMishra20"
+                        target="_blank"
+                        >Rakesh Mishra</a
+                      >
+                    </p>
+                  </div>
+
+                  <!--Skype-info-->
+                  <div class="contact-info">
+                    <i class="ion-social-skype-outline"></i>
+                    <p style="margin-top:20px">
+                      <a href="skype:hello.irakeshm?add" target="_blank"
+                        >hello.irakeshm</a
+                      >
+                    </p>
+                  </div>
+
+                  <!--pintrest-info-->
+                  <div class="contact-info">
+                    <i class="ion-social-pinterest-outline"></i>
+                    <p style="margin-top:20px">
+                      <a
+                        href="https://in.pinterest.com/irakeshm/"
+                        target="_blank"
+                        >@irakeshm</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-8 col-md-pull-4">
+                <!--contact-form-->
+                <form
+                  class="contact-form"
+                  id="contact-form"
+                  method="post"
+                  data-toggle="validator"
+                  novalidate="true"
+                >
+                  <!--contact-form-result-->
+                  <div id="contact-form-result"></div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="conatct-name-id"
+                          name="name"
+                          placeholder="Name"
+                          required=""
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="conatct-email-id"
+                          name="email"
+                          placeholder="Email"
+                          required=""
+                        />
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="conatct-subject-id"
+                      name="subject"
+                      placeholder="Subject"
+                      required=""
+                    />
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      placeholder="Message"
+                      id="conatct-message-id"
+                      name="message"
+                      rows="6"
+                      required=""
+                    ></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+
+                  <div class="form-group text-center">
+                    <button
+                      onclick="savedata()"
+                      class="btn-material disabled"
+                      style="pointer-events: all; cursor: pointer;"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!--========================================================================
 			JavaScript Files
 		=========================================================================-->
     <!-- <script src="./js/jquery.min.js"></script> -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/jquery.shuffle.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/3.0.0/jquery.shuffle.min.js"></script> -->
     <script src="./js/owl.carousel.min.js"></script>
@@ -2183,8 +2456,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
     <script src="./js/script.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
