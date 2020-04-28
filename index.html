@@ -75,20 +75,17 @@
         databaseURL: "https://resume-contact-7f6f4.firebaseio.com",
         projectId: "resume-contact-7f6f4",
         storageBucket: "resume-contact-7f6f4.appspot.com",
-        messagingSenderId: "772813503157"
+        messagingSenderId: "772813503157",
       };
       firebase.initializeApp(config);
 
       function savedata() {
-        let emailsref = firebase
-          .database()
-          .ref()
-          .child("emails");
+        let emailsref = firebase.database().ref().child("emails");
         const emails = {
           emailid: document.querySelector("#conatct-email-id").value,
           message: document.querySelector("#conatct-message-id").value,
           name: document.querySelector("#conatct-name-id").value,
-          subject: document.querySelector("#conatct-subject-id").value
+          subject: document.querySelector("#conatct-subject-id").value,
         };
         emailsref.push(emails);
       }
@@ -197,7 +194,7 @@
           <!--Add "d-none d-lg-block d-xl-block" if dont want to show this dive on other than large screen.-->
           <div
             class="col-lg-6 col-md-6 col-xs-12 img-col-main"
-            style="display: flex"
+            style="display: flex;"
           >
             <!-- <div class="intro-text-col-1"> -->
             <!-- <div class="inner"> -->
@@ -208,7 +205,7 @@
 
             <div
               class="js no-touch"
-              style="padding:5px; background: #d4dad4; flex: 1"
+              style="padding: 5px; background: #d4dad4; flex: 1;"
             >
               <div class="grid cs-style-3">
                 <figure>
@@ -270,9 +267,7 @@
 
                   <!--your-summarized explanation-->
                   <!-- <span>I Automate Web, Desktop & Mobile App.</span> -->
-                  <span
-                  >I am Full Stack Software Test Automation Engineer</span
-                  >
+                  <span>I am Full Stack Software Test Automation Engineer</span>
                   <!-- <span>A Tester, Developer and Human from earth &#9793;</span> -->
                   <h3>I am <span class="typed"></span></h3>
 
@@ -285,11 +280,12 @@
                                     India as Sr.
                                     Software Engineer (Testing).
                                 </p> -->
-                  <p style="text-align:justify;">
+                  <p style="text-align: justify;">
                     A <b>Software Engineer</b> based in India, with strong
                     expertise in Automation Test Tools and Ddesigning and
                     Implementing Test Automation Frameworks, and Occasionally
-                    Developing Web, Windows & Mobile Applications. Currently working at
+                    Developing Web, Windows & Mobile Applications. Currently
+                    working at
                     <a href="https://www.stryker.com/" target="_blank"
                       >Stryker Corporation</a
                     >, India as Senior Software Engineer.
@@ -357,7 +353,7 @@
                 <!--about-text-->
                 <div class="about-text">
                   <p>
-                    7+ years of professional experience in the field of Software
+                    8+ years of professional experience in the field of Software
                     Quality Assurance and Testing as SDET with extensive
                     knowledge of Software Automation, Design & Implementation. A
                     highly capable technology and testing professional who
@@ -961,7 +957,13 @@
                   </p>
 
                   <div class="author-info">
-                    <h4><a href="https://www.linkedin.com/in/jatinshashoo/" target="_blank">Jatin Shashoo</a></h4>
+                    <h4>
+                      <a
+                        href="https://www.linkedin.com/in/jatinshashoo/"
+                        target="_blank"
+                        >Jatin Shashoo</a
+                      >
+                    </h4>
                     <span>Associate at J. P. Morgan Chase and Co.</span>
                   </div>
                 </div>
@@ -985,7 +987,13 @@
                   </p>
 
                   <div class="author-info">
-                    <h4><a href="https://www.linkedin.com/in/raman-dubey-a1120667/" target="_blank">Raman Dubey</a></h4>
+                    <h4>
+                      <a
+                        href="https://www.linkedin.com/in/raman-dubey-a1120667/"
+                        target="_blank"
+                        >Raman Dubey</a
+                      >
+                    </h4>
                     <span>Associate Consultant HCL Technologies</span>
                   </div>
                 </div>
@@ -997,17 +1005,32 @@
 
                 <div class="content">
                   <p>
-                    Rakesh is a forward thinking plus always a go to guy with lots of knowledge in his field. When you really get to connect
-                    with him, you will find an incredible personality with unique skills! He has an easiness to build interpersonal
-                    relations with others which always ends up with huge impact of his skills. His leadership and organizational skills have
-                    been invaluable to the projects that we did together. Besides being a joy to work with, Rakesh is a take-charge person
-                    who is able to present feasible solutions to complex problems and communicate the benefits to his peers. I thoroughly
-                    enjoyed dealing with him during our multiple stints.
+                    Rakesh is a forward thinking plus always a go to guy with
+                    lots of knowledge in his field. When you really get to
+                    connect with him, you will find an incredible personality
+                    with unique skills! He has an easiness to build
+                    interpersonal relations with others which always ends up
+                    with huge impact of his skills. His leadership and
+                    organizational skills have been invaluable to the projects
+                    that we did together. Besides being a joy to work with,
+                    Rakesh is a take-charge person who is able to present
+                    feasible solutions to complex problems and communicate the
+                    benefits to his peers. I thoroughly enjoyed dealing with him
+                    during our multiple stints.
                   </p>
 
                   <div class="author-info">
-                    <h4><a href="https://www.linkedin.com/in/chandragaur/" target="_blank">Chandra Gaur</a></h4>
-                    <span>Product Manager - Paytm (One97 Communications Limited)</span>
+                    <h4>
+                      <a
+                        href="https://www.linkedin.com/in/chandragaur/"
+                        target="_blank"
+                        >Chandra Gaur</a
+                      >
+                    </h4>
+                    <span
+                      >Product Manager - Paytm (One97 Communications
+                      Limited)</span
+                    >
                   </div>
                 </div>
               </div>
@@ -1176,12 +1199,24 @@
             <!--portfolio-items-->
             <ul
               class="portfolio-items shuffle"
-              style="position: relative; overflow: hidden; height: 72px; transition: height 250ms ease-out 0s;"
+              style="
+                position: relative;
+                overflow: hidden;
+                height: 72px;
+                transition: height 250ms ease-out 0s;
+              "
             >
               <li
                 data-groups='["web"]'
                 class="shuffle-item filtered"
-                style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
               >
                 <div class="inner">
                   <img src="./img/resume.jpg" alt="" />
@@ -1199,7 +1234,13 @@
                         <img
                           src="./img/resume.jpg"
                           alt=""
-                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                          style="
+                            padding: 10px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 100%;
+                          "
                         />
                       </figure>
                       <div class="content">
@@ -1228,7 +1269,16 @@
               <li
                 data-groups='["mobile"]'
                 class="shuffle-item filtered"
-                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(312px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(312px, 0px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
               >
                 <div class="inner">
                   <img src="./img/tea_Recat.jpg" alt="" />
@@ -1246,7 +1296,13 @@
                         <img
                           src="./img/tea_Recat.jpg"
                           alt=""
-                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                          style="
+                            padding: 10px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 100%;
+                          "
                         />
                       </figure>
                       <div class="content">
@@ -1274,7 +1330,16 @@
               <li
                 data-groups='["mobile"]'
                 class="shuffle-item filtered"
-                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(624px, 0px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
               >
                 <div class="inner">
                   <img src="./img/dine_React.jpg" alt="" />
@@ -1292,7 +1357,13 @@
                         <img
                           src="./img/dine_React.jpg"
                           alt=""
-                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                          style="
+                            padding: 10px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 100%;
+                          "
                         />
                       </figure>
                       <div class="content">
@@ -1318,7 +1389,16 @@
               <li
                 data-groups='["web"]'
                 class="shuffle-item filtered"
-                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(0px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(0px, 36px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
               >
                 <div class="inner">
                   <img src="./img/todo_reactjs.JPG" alt="" />
@@ -1336,7 +1416,13 @@
                         <img
                           src="./img/todo_reactjs.JPG"
                           alt=""
-                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                          style="
+                            padding: 10px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 100%;
+                          "
                         />
                       </figure>
                       <div class="content">
@@ -1367,7 +1453,16 @@
               <li
                 data-groups='["mobile"]'
                 class="shuffle-item filtered"
-                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(312px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(312px, 36px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
               >
                 <div class="inner">
                   <img src="./img/Weather.jpg" alt="" />
@@ -1385,7 +1480,13 @@
                         <img
                           src="./img/Weather.jpg"
                           alt=""
-                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                          style="
+                            padding: 10px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 100%;
+                          "
                         />
                       </figure>
                       <div class="content">
@@ -1416,7 +1517,16 @@
               <li
                 data-groups='["automation"]'
                 class="shuffle-item filtered"
-                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(624px, 36px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
               >
                 <div class="inner">
                   <img src="./img/intelligent.jpg" alt="" />
@@ -1434,7 +1544,13 @@
                         <img
                           src="./img/intelligent.jpg"
                           alt=""
-                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                          style="
+                            padding: 10px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 100%;
+                          "
                         />
                       </figure>
                       <div class="content">
@@ -1459,7 +1575,16 @@
               <li
                 data-groups='["automation"]'
                 class="shuffle-item filtered"
-                style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(624px, 36px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(624px, 36px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
               >
                 <div class="inner">
                   <img src="./img/Selenium.jpg" alt="" />
@@ -1477,7 +1602,13 @@
                         <img
                           src="./img/Selenium.jpg"
                           alt=""
-                          style="padding:10px;display: block; margin-left: auto; margin-right: auto; width: 100%;"
+                          style="
+                            padding: 10px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 100%;
+                          "
                         />
                       </figure>
                       <div class="content">
@@ -1513,45 +1644,63 @@
               <p>Take a look at my Certificates and Badges</p>
             </div>
 
-            <div class="posts-grid shuffle" style="position: relative; overflow: hidden; height: 703px; transition: height 250ms ease-out 0s;">
+            <div
+              class="posts-grid shuffle"
+              style="
+                position: relative;
+                overflow: hidden;
+                height: 703px;
+                transition: height 250ms ease-out 0s;
+              "
+            >
+              <div
+                class="blog-post shuffle-item filtered"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
+              >
+                <div class="inner">
+                  <figure>
+                    <img
+                      src="./img/b_1.jpg"
+                      alt=""
+                      style="
+                        padding: 5px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                      "
+                    />
+                  </figure>
 
+                  <div class="content">
+                    <h4>Software Testing with Visual Studio</h4>
 
-                        <div class="blog-post shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
+                    <ul class="post-icons">
+                      <li>
+                        <i class="ion-ios-person-outline"></i>
+                        <span>Microsoft Certification</span>
+                      </li>
+                      <br />
+                      <li>
+                        <i class="ion-ios-clock-outline"></i>
+                        <span>April, 2014</span>
+                      </li>
+                    </ul>
 
-                                <figure>
+                    <p>
+                      Software testing with Visual Studio streamlines the
+                      development and testing process and supports the needs of
+                      software developers and testers.
+                    </p>
 
-                                    <img src="./img/b_1.jpg" alt="" style="padding:5px;display: block; margin-left: auto; margin-right: auto; width: 100%;">
-
-                                </figure>
-
-                                <div class="content">
-
-                                    <h4>Software Testing with Visual Studio</h4>
-
-                                    <ul class="post-icons">
-
-                                        <li>
-                                            <i class="ion-ios-person-outline"></i>
-                                            <span>Microsoft Certification</span>
-                                        </li>
-                                        <br/>
-                                        <li>
-                                            <i class="ion-ios-clock-outline"></i>
-                                            <span>April, 2014</span>
-                                        </li>
-
-                                        
-
-                                    </ul>
-
-
-                                    <p>
-                                        Software testing with Visual Studio streamlines the development and testing process and supports the needs of software
-                                        developers and testers. </p>
-
-
-                                    <!-- <a href="#popup-7" class="read-more has-popup view-project">
+                    <!-- <a href="#popup-7" class="read-more has-popup view-project">
                                         Read More
                                         <i class="ion-ios-arrow-thin-right"></i>
                                     </a>
@@ -1619,50 +1768,51 @@
 
                                         </div>
                                     </div> -->
+                  </div>
+                </div>
+              </div>
 
-                                </div>
+              <div
+                class="blog-post shuffle-item filtered"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(313px, 0px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
+              >
+                <div class="inner">
+                  <figure>
+                    <img src="./img/b_2.jpg" alt="" />
+                  </figure>
 
+                  <div class="content">
+                    <h4>Programming in C#</h4>
 
-                            </div>
-                        </div>
+                    <ul class="post-icons">
+                      <li>
+                        <i class="ion-ios-person-outline"></i>
+                        <span>Microsoft Certification</span>
+                      </li>
+                      <br />
+                      <li>
+                        <i class="ion-ios-clock-outline"></i>
+                        <span>July 2013</span>
+                      </li>
+                    </ul>
 
-                        <div class="blog-post shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(313px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
+                    <p>
+                      Programming in C# focuses on the critical-thinking,
+                      essential Business/Application Logic, Problem Solving and
+                      decision-making acumen needed for success at the Microsoft
+                      Specialist level.
+                    </p>
 
-                                <figure>
-
-                                    <img src="./img/b_2.jpg" alt="">
-
-                                </figure>
-
-                                <div class="content">
-
-                                    <h4>Programming in C#</h4>
-
-                                    <ul class="post-icons">
-
-                                        <li>
-                                            <i class="ion-ios-person-outline"></i>
-                                            <span>Microsoft Certification</span>
-                                        </li>
-                                        <br/>
-                                        <li>
-                                            <i class="ion-ios-clock-outline"></i>
-                                            <span>July 2013</span>
-                                        </li>
-
-                                       
-
-                                    </ul>
-
-
-                                    <p>
-                                        Programming in C# focuses on the critical-thinking, essential Business/Application Logic, Problem Solving and decision-making acumen needed for success at the
-                                        Microsoft Specialist level.
-                                    </p>
-
-
-                                    <!-- <a href="#popup-8" class="read-more has-popup view-project">
+                    <!-- <a href="#popup-8" class="read-more has-popup view-project">
                                         Read More
                                         <i class="ion-ios-arrow-thin-right"></i>
                                     </a>
@@ -1730,48 +1880,50 @@
 
                                         </div>
                                     </div> -->
+                  </div>
+                </div>
+              </div>
 
-                                </div>
+              <div
+                class="blog-post shuffle-item filtered"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(626px, 0px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
+              >
+                <div class="inner">
+                  <figure>
+                    <img src="./img/b_3.jpg" alt="" />
+                  </figure>
 
+                  <div class="content">
+                    <h4>Programming in HTML5 with JavaScript & CSS3</h4>
 
-                            </div>
-                        </div>
+                    <ul class="post-icons">
+                      <li>
+                        <i class="ion-ios-person-outline"></i>
+                        <span>Microsoft Certification</span>
+                      </li>
+                      <br />
+                      <li>
+                        <i class="ion-ios-clock-outline"></i>
+                        <span>December 2012</span>
+                      </li>
+                    </ul>
 
-                        <div class="blog-post shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(626px, 0px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
+                    <p>
+                      It focuses on using HTML5/CSS3/JavaScript to implement
+                      programming logic, define and use variables, develop UI/UX
+                      and more.
+                    </p>
 
-                                <figure>
-
-                                    <img src="./img/b_3.jpg" alt="">
-
-                                </figure>
-
-                                <div class="content">
-
-                                    <h4>Programming in HTML5 with JavaScript & CSS3</h4>
-
-                                    <ul class="post-icons">
-
-                                        <li>
-                                            <i class="ion-ios-person-outline"></i>
-                                            <span>Microsoft Certification</span>
-                                        </li>
-                                        <br/>
-                                        <li>
-                                            <i class="ion-ios-clock-outline"></i>
-                                            <span>December 2012</span>
-                                        </li>
-
-                                    </ul>
-
-
-                                    <p>
-                                        It focuses on using HTML5/CSS3/JavaScript to implement programming logic, define and use variables, develop UI/UX and
-                                        more.
-                                    </p>
-
-
-                                    <!-- <a href="#popup-9" class="read-more has-popup view-project">
+                    <!-- <a href="#popup-9" class="read-more has-popup view-project">
                                         Read More
                                         <i class="ion-ios-arrow-thin-right"></i>
                                     </a>
@@ -1839,54 +1991,54 @@
 
                                         </div>
                                     </div> -->
+                  </div>
+                </div>
+              </div>
 
+              <div
+                class="blog-post shuffle-item filtered"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(0px, 341px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
+              >
+                <div class="inner">
+                  <figure>
+                    <img src="./img/b_4.jpg" alt="" />
+                  </figure>
 
-                                </div>
+                  <div class="content">
+                    <h4>Programming in HTML5 with JavaScript & CSS3</h4>
 
+                    <ul class="post-icons">
+                      <li>
+                        <i class="ion-ios-person-outline"></i>
+                        <span>Microsoft Certification</span>
+                      </li>
+                      <br />
+                      <li>
+                        <i class="ion-ios-clock-outline"></i>
+                        <span>December 2012</span>
+                      </li>
+                    </ul>
 
-                            </div>
-                        </div>
+                    <p>
+                      It focuses on using HTML5/CSS3/JavaScript to perform
+                      looping and branching, capture and validate user input,
+                      store data.
+                    </p>
 
-                        <div class="blog-post shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(0px, 341px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
-
-                                <figure>
-
-                                    <img src="./img/b_4.jpg" alt="">
-
-                                </figure>
-
-                                <div class="content">
-
-                                    <h4>Programming in HTML5 with JavaScript & CSS3</h4>
-
-                                    <ul class="post-icons">
-
-                                        <li>
-                                            <i class="ion-ios-person-outline"></i>
-                                            <span>Microsoft Certification</span>
-                                        </li>
-                                        <br/>
-                                        <li>
-                                            <i class="ion-ios-clock-outline"></i>
-                                            <span>December 2012</span>
-                                        </li>
-
-
-                                    </ul>
-
-
-                                    <p>
-                                      It focuses on using HTML5/CSS3/JavaScript to perform looping and branching, capture and validate user input, store data.
-                                      
-                                    </p>
-
-
-                                    <!-- <a href="#popup-10" class="read-more has-popup view-project">
+                    <!-- <a href="#popup-10" class="read-more has-popup view-project">
                                         Read More
                                         <i class="ion-ios-arrow-thin-right"></i>
                                     </a> -->
-                                    <!-- <div id="popup-10" class="popup-box zoom-anim-dialog mfp-hide">
+                    <!-- <div id="popup-10" class="popup-box zoom-anim-dialog mfp-hide">
                                         <figure>
 
                                             
@@ -1950,49 +2102,50 @@
 
                                         </div>
                                     </div> -->
+                  </div>
+                </div>
+              </div>
 
-                                </div>
+              <div
+                class="blog-post shuffle-item filtered"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(313px, 341px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
+              >
+                <div class="inner">
+                  <figure>
+                    <img src="./img/b_5.jpg" alt="" />
+                  </figure>
 
+                  <div class="content">
+                    <h4>Microsoft Dynamics CRM 2011 Applications</h4>
 
-                            </div>
-                        </div>
+                    <ul class="post-icons">
+                      <li>
+                        <i class="ion-ios-person-outline"></i>
+                        <span>Microsoft Certification</span>
+                      </li>
+                      <br />
+                      <li>
+                        <i class="ion-ios-clock-outline"></i>
+                        <span>January 2014</span>
+                      </li>
+                    </ul>
 
-                        <div class="blog-post shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(313px, 341px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
+                    <p>
+                      Microsoft Dynamics CRM 2011 Applications focuses on
+                      implement, use, maintain, or support Microsoft Dynamics
+                      CRM 2011 in organization.
+                    </p>
 
-                                <figure>
-
-                                    <img src="./img/b_5.jpg" alt="">
-
-                                </figure>
-
-                                <div class="content">
-
-                                    <h4>Microsoft Dynamics CRM 2011 Applications</h4>
-
-                                    <ul class="post-icons">
-
-                                        <li>
-                                            <i class="ion-ios-person-outline"></i>
-                                            <span>Microsoft Certification</span>
-                                        </li>
-                                        <br/>
-                                        <li>
-                                            <i class="ion-ios-clock-outline"></i>
-                                            <span>January 2014</span>
-                                        </li>
-
-
-                                    </ul>
-
-
-                                    <p>
-                                        Microsoft Dynamics CRM 2011 Applications focuses on implement, use, maintain, or support Microsoft Dynamics CRM 2011 in
-                                        organization.
-                                    </p>
-
-
-                                    <!-- <a href="#popup-11" class="read-more has-popup view-project">
+                    <!-- <a href="#popup-11" class="read-more has-popup view-project">
                                         Read More
                                         <i class="ion-ios-arrow-thin-right"></i>
                                     </a>
@@ -2060,48 +2213,50 @@
 
                                         </div>
                                     </div> -->
+                  </div>
+                </div>
+              </div>
 
-                                </div>
+              <div
+                class="blog-post shuffle-item filtered"
+                style="
+                  position: absolute;
+                  top: 0px;
+                  left: 0px;
+                  visibility: visible;
+                  opacity: 1;
+                  transform: translate3d(626px, 341px, 0px) scale3d(1, 1, 1);
+                  transition: transform 250ms ease-out 0s,
+                    opacity 250ms ease-out 0s;
+                "
+              >
+                <div class="inner">
+                  <figure>
+                    <img src="./img/b_6.jpg" alt="" />
+                  </figure>
 
+                  <div class="content">
+                    <h4>Microsoft Certified Professional</h4>
 
-                            </div>
-                        </div>
+                    <ul class="post-icons">
+                      <li>
+                        <i class="ion-ios-person-outline"></i>
+                        <span>Microsoft Certification</span>
+                      </li>
+                      <br />
+                      <li>
+                        <i class="ion-ios-clock-outline"></i>
+                        <span>December 2012</span>
+                      </li>
+                    </ul>
 
-                        <div class="blog-post shuffle-item filtered" style="position: absolute; top: 0px; left: 0px; visibility: visible; opacity: 1; transform: translate3d(626px, 341px, 0px) scale3d(1, 1, 1); transition: transform 250ms ease-out 0s, opacity 250ms ease-out 0s;">
-                            <div class="inner">
+                    <p>
+                      Certification program from Microsoft that enables IT
+                      Professionals and Developers to validate their technical
+                      expertise.
+                    </p>
 
-                                <figure>
-
-                                    <img src="./img/b_6.jpg" alt="">
-
-                                </figure>
-
-                                <div class="content">
-
-                                    <h4>Microsoft Certified Professional</h4>
-
-                                    <ul class="post-icons">
-
-                                        <li>
-                                            <i class="ion-ios-person-outline"></i>
-                                            <span>Microsoft Certification</span>
-                                        </li>
-                                        <br/>
-                                        <li>
-                                            <i class="ion-ios-clock-outline"></i>
-                                            <span>December 2012</span>
-                                        </li>
-
-
-                                    </ul>
-
-
-                                    <p>
-                                        Certification program from Microsoft that enables IT Professionals and Developers to validate their technical expertise.
-                                    </p>
-
-
-                                    <!-- <a href="#popup-12" class="read-more has-popup view-project">
+                    <!-- <a href="#popup-12" class="read-more has-popup view-project">
                                         Read More
                                         <i class="ion-ios-arrow-thin-right"></i>
                                     </a>
@@ -2170,16 +2325,10 @@
 
                                         </div>
                                     </div> -->
-                                </div>
-
-
-                            </div>
-                        </div>
-
-
-                    </div>
-
-            
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -2215,7 +2364,7 @@
                   <!--contact-info-->
                   <div class="contact-info">
                     <i class="ion-ios-telephone-outline"></i>
-                    <p style="margin-top:15px">
+                    <p style="margin-top: 15px;">
                       <a href="#" onclick="return false;">(+91) 956-0684-663</a>
                     </p>
                   </div>
@@ -2236,7 +2385,7 @@
                   <!--whatsapp-info-->
                   <div class="contact-info">
                     <i class="ion-social-whatsapp-outline"></i>
-                    <p style="margin-top:20px">
+                    <p style="margin-top: 20px;">
                       <a
                         href="https://api.whatsapp.com/send?phone=919560684663"
                         target="_blank"
@@ -2247,7 +2396,7 @@
                   <!--Linkedin-info-->
                   <div class="contact-info">
                     <i class="ion-social-linkedin-outline"></i>
-                    <p style="margin-top:20px">
+                    <p style="margin-top: 20px;">
                       <a
                         href="https://www.linkedin.com/in/irakeshm/"
                         target="_blank"
@@ -2259,7 +2408,7 @@
                   <!--Github-info-->
                   <div class="contact-info">
                     <i class="ion-social-github-outline"></i>
-                    <p style="margin-top:20px">
+                    <p style="margin-top: 20px;">
                       <a href="https://github.com/irakeshm" target="_blank"
                         >@irakeshm</a
                       >
@@ -2268,7 +2417,7 @@
                   <!--twitter-info-->
                   <div class="contact-info">
                     <i class="ion-social-twitter-outline"></i>
-                    <p style="margin-top:20px">
+                    <p style="margin-top: 20px;">
                       <a href="https://twitter.com/iRakeshM" target="_blank"
                         >@iRakeshM</a
                       >
@@ -2277,7 +2426,7 @@
                   <!--Google-info-->
                   <div class="contact-info">
                     <i class="ion-social-googleplus-outline"></i>
-                    <p style="margin-top:20px">
+                    <p style="margin-top: 20px;">
                       <a
                         href="https://plus.google.com/u/0/+RakeshMishra20"
                         target="_blank"
@@ -2289,7 +2438,7 @@
                   <!--Skype-info-->
                   <div class="contact-info">
                     <i class="ion-social-skype-outline"></i>
-                    <p style="margin-top:20px">
+                    <p style="margin-top: 20px;">
                       <a href="skype:hello.irakeshm?add" target="_blank"
                         >hello.irakeshm</a
                       >
@@ -2299,7 +2448,7 @@
                   <!--pintrest-info-->
                   <div class="contact-info">
                     <i class="ion-social-pinterest-outline"></i>
-                    <p style="margin-top:20px">
+                    <p style="margin-top: 20px;">
                       <a
                         href="https://in.pinterest.com/irakeshm/"
                         target="_blank"
